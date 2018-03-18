@@ -1039,7 +1039,7 @@
                                         <img class="img-rounded" src="/image/background/400x400/background12.jpg" alt="" width="65px" height="65px">
                                     </li>
                                     <li class="text-left">
-                                        <h5 class="semibold ellipsis nm">Lamb Of Chop</h5>
+                                        <h5 class="semibold ellipsis nm">Lamb Of Chop....</h5>
                                         <p class="text-muted nm">5 Song in playlist</p>
                                     </li>
                                 </ul>
@@ -1049,33 +1049,46 @@
                                 <tbody>
                                     <tr>
                                         <td width="5%">
-                                            <a href="javascript:void(0);" class="text-default"><i class="ico-play32"></i></a>
+                                            <audio controls>
+  <source src="/pf_be_woman_soon.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+Walk With Me to Hell
                                         </td>
-                                        <td>Walk With Me to Hell</td>
                                     </tr>
                                     <tr>
                                         <td width="5%">
-                                            <a href="javascript:void(0);" class="text-default"><i class="ico-play32"></i></a>
+                                        <audio controls>
+  <source src="/pf_be_woman_soon.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+                                        Laid To Death
                                         </td>
-                                        <td>Laid To Death</td>
                                     </tr>
                                     <tr>
                                         <td width="5%">
-                                            <a href="javascript:void(0);" class="text-default"><i class="ico-play32"></i></a>
-                                        </td>
-                                        <td>Rain</td>
+                                        <audio controls>
+                                              <source src="/pf_be_woman_soon.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+Rain</td>
                                     </tr>
                                     <tr>
                                         <td width="5%">
-                                            <a href="javascript:void(0);" class="text-success"><i class="ico-stop2"></i></a>
-                                        </td>
-                                        <td class="text-success semibold">Blackneck</td>
+                                        <audio controls>
+  <source src="/pf_be_woman_soon.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+Blackneck</td>
                                     </tr>
                                     <tr>
                                         <td width="5%">
-                                            <a href="javascript:void(0);" class="text-default"><i class="ico-play32"></i></a>
+                                        <audio controls>
+  <source src="/pf_be_woman_soon.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+                                        Pink Label
                                         </td>
-                                        <td>Pink Label</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1100,7 +1113,7 @@
                             <div class="panel-body bgcolor-primary">
                                 <ul class="list-table">
                                     <li><h3 class="semibold nm text-left">20.514</h3></li>
-                                    <li><p class="semibold nm text-right">Total visitor <i class="ico-male ml5"></i></p></li>
+                                    <li><p class="semibold nm text-right">Total visitor........... <i class="ico-male ml5"></i></p></li>
                                 </ul>
                                 <!-- chart -->
                                 <div class="chart mt15" id="visitor-wchart"></div>
@@ -1112,7 +1125,7 @@
                                 <ul class="nav nav-section nav-justified">
                                     <li>
                                         <div class="section">
-                                            <span class="text-muted">Visits</span>
+                                            <span class="text-muted">Visits...............................</span>
                                             <h4 class="nm">4792</h4>
                                         </div>
                                     </li>
