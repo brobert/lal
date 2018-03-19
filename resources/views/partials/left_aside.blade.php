@@ -1,8 +1,8 @@
 <!-- START Template Sidebar (Left) -->
         <aside class="sidebar sidebar-left sidebar-menu">
-			<!-- START Sidebar Content -->
+            <!-- START Sidebar Content -->
             <section class="content slimscroll">
-				<!-- START Template Navigation/Menu -->
+                <!-- START Template Navigation/Menu -->
                 <ul class="topmenu topmenu-responsive" data-toggle="menu">
                     <li class="active">
                         <a href="/" data-target="#dashboard" data-parent=".topmenu">
@@ -10,7 +10,7 @@
                             <span class="text">@lang('menu.dashboard')</span>
                         </a>
                     </li>
-					<li >
+                    <li >
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#layout" data-parent=".topmenu">
                             <span class="figure"><i class="ico-grid"></i></span>
                             <span class="text">@lang('menu.layouts')</span>
@@ -54,11 +54,11 @@
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
-					<li>
+                    <li>
                         <a href="/widget" data-parent=".topmenu">
                             <span class="figure"><i class="ico-tasks"></i></span>
                             <span class="text">Stats & Widgets</span>
-							<span class="number"><span class="label label-danger">6</span></span>
+                            <span class="number"><span class="label label-danger">6</span></span>
                         </a>
                     </li>
                     <li >
@@ -75,7 +75,7 @@
                                     <span class="text">Animation</span>
                                 </a>
                             </li>
-							<li >
+                            <li >
                                 <a href="{{route('component.button')}}">
                                     <span class="text">Button</span>
                                     <span class="number"><span class="label label-info">U</span></span>
@@ -86,22 +86,22 @@
                                     <span class="text">Carousel</span>
                                 </a>
                             </li>
-							<li >
+                            <li >
                                 <a href="{{route('component.grid')}}">
                                     <span class="text">Grid</span>
                                 </a>
                             </li>
-							<li >
+                            <li >
                                 <a href="{{route('component.icon')}}">
                                     <span class="text">Icon</span>
                                 </a>
                             </li>
-							<li >
+                            <li >
                                 <a href="{{route('component.loading')}}">
                                     <span class="text">Loading indicator</span>
                                 </a>
                             </li>
-							<li >
+                            <li >
                                 <a href="{{route('component.notification')}}">
                                     <span class="text">Notification</span>
                                 </a>
@@ -116,12 +116,12 @@
                                     <span class="text">Pricing table / box</span>
                                 </a>
                             </li>
-							<li >
+                            <li >
                                 <a href="{{route('component.slider')}}">
                                     <span class="text">Slider</span>
                                 </a>
                             </li>
-							<li >
+                            <li >
                                 <a href="{{route('component.sortable')}}">
                                     <span class="text">Sortable</span>
                                     <span class="number"><span class="label label-success">N</span></span>
@@ -155,44 +155,44 @@
                         <ul id="form" class="submenu collapse ">
                             <li class="submenu-header ellipsis">Forms</li>
                             <li >
-                                <a href="/form-element">
+                                <a href="{{route('form.element')}}">
                                     <span class="text">Element</span>
                                     <span class="number"><span class="label label-info">U</span></span>
                                 </a>
                             </li>
                             <li >
-                                <a href="/form-layout">
+                                <a href="{{route('form.layout')}}">
                                     <span class="text">Layout</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="/form-validation">
+                                <a href="{{route('form.validation')}}">
                                     <span class="text">Validation</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="/form-wizard">
+                                <a href="{{route('form.wizard')}}">
                                     <span class="text">Wizard</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="/form-wysiwyg">
+                                <a href="{{route('form.wysiwyg')}}">
                                     <span class="text">WYSIWYG Editor</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="/form-xeditable">
+                                <a href="{{route('form.xeditable')}}">
                                     <span class="text">X-editable</span>
                                 </a>
                             </li>
                             <li >
-                                <a href="/form-fileupload">
+                                <a href="{{route('form.fileupload')}}">
                                     <span class="text">File Upload</span>
                                     <span class="number"><span class="label label-success">N</span></span>
                                 </a>
                             </li>
                             <li >
-                                <a href="/form-imagecrop">
+                                <a href="{{route('form.imagecrop')}}">
                                     <span class="text">Image Crop</span>
                                     <span class="number"><span class="label label-success">N</span></span>
                                 </a>
@@ -210,12 +210,12 @@
                         <ul id="table" class="submenu collapse ">
                             <li class="submenu-header ellipsis">Tables</li>
                             <li >
-                                <a href="/table-default">
+                                <a href="{{route('table.default')}}">
                                     <span class="text">Basic Tables</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/table-datatable">
+                                <a href="{{route('table.datatable')}}">
                                     <span class="text">Data Tables</span>
                                 </a>
                             </li>
@@ -232,11 +232,11 @@
                         <ul id="page" class="submenu collapse ">
                             <li class="submenu-header ellipsis">Miscelleneous</li>
                             <li >
-                                <a href="/page-starter">
+                                <a href="{{route('page.starter')}}">
                                     <span class="text">Blank </span>
                                 </a>
                             </li>
-							<li >
+                            <li >
                                 <a href="javascript:void(0);" data-toggle="submenu" data-target="#blog" data-parent="#page">
                                     <span class="text">Blog page</span>
                                     <span class="arrow"></span>
@@ -244,19 +244,19 @@
                                 <!-- START 2nd Level Menu -->
                                 <ul id="blog" class="submenu collapse ">
                                     <li >
-                                        <a href="/page-blog-default"><span class="text">Blog default</span></a>
+                                        <a href="{{route('page.blog.default')}}"><span class="text">Blog default</span></a>
                                     </li>
                                     <li >
-                                        <a href="/page-blog-grid"><span class="text">Blog grid</span></a>
+                                        <a href="{{route('page.blog.grid')}}"><span class="text">Blog grid</span></a>
                                     </li>
                                     <li >
-                                        <a href="/page-blog-single"><span class="text">Single post</span></a>
+                                        <a href="{{route('page.blog.single')}}"><span class="text">Single post</span></a>
                                     </li>
                                 </ul>
                                 <!--/ END 2nd Level Menu -->
                             </li>
-							<li >
-                                <a href="/page-calendar">
+                            <li >
+                                <a href="{{route('page.calendar')}}">
                                     <span class="text">Calendar</span>
                                 </a>
                             </li>
@@ -268,10 +268,10 @@
                                 <!-- START 2nd Level Menu -->
                                 <ul id="email" class="submenu collapse ">
                                     <li >
-                                        <a href="/page-email-inbox"><span class="text">Inbox</span></a>
+                                        <a href="{{route('page.email.inbox')}}"><span class="text">Inbox</span></a>
                                     </li>
                                     <li >
-                                        <a href="/page-email-view"><span class="text">View</span></a>
+                                        <a href="{{route('page.email.view')}}"><span class="text">View</span></a>
                                     </li>
                                 </ul>
                                 <!--/ END 2nd Level Menu -->
@@ -284,29 +284,29 @@
                                 <!-- START 2nd Level Menu -->
                                 <ul id="error" class="submenu collapse ">
                                     <li >
-                                        <a href="/page-error-404"><span class="text">Not Found (404)</span></a>
+                                        <a href="{{route('page.error.404')}}"><span class="text">Not Found (404)</span></a>
                                     </li>
                                     <li >
-                                        <a href="/page-error-403"><span class="text">Forbidden (403)</span></a>
+                                        <a href="{{route('page.error.403')}}"><span class="text">Forbidden (403)</span></a>
                                     </li>
                                     <li >
-                                        <a href="/page-error-500"><span class="text">Server Error (500)</span></a>
+                                        <a href="{{route('page.error.500')}}"><span class="text">Server Error (500)</span></a>
                                     </li>
                                 </ul>
                                 <!--/ END 2nd Level Menu -->
                             </li>
-							<li >
-                                <a href="/page-faq">
+                            <li >
+                                <a href="{{route('page.faq')}}">
                                     <span class="text">FAQ</span>
                                 </a>
                             </li>
-							<li >
-                                <a href="/page-invoice">
+                            <li >
+                                <a href="{{route('page.invoice')}}">
                                     <span class="text">Invoice</span>
                                 </a>
                             </li>
-							<li >
-                                <a href="/page-profile">
+                            <li >
+                                <a href="{{route('page-profile.index')}}">
                                     <span class="text">Profile</span>
                                 </a>
                             </li>
@@ -316,7 +316,7 @@
                                 </a>
                             </li>
                             <li >
-                                <a href="/page-login-returned">
+                                <a href="{{route('page.login.returned')}}">
                                     <span class="text">Lock Screen</span>
                                 </a>
                             </li>
@@ -333,10 +333,10 @@
                                 <!-- START 2nd Level Menu -->
                                 <ul id="media" class="submenu collapse ">
                                     <li >
-                                        <a href="/page-media-album"><span class="text">Media album</span></a>
+                                        <a href="{{route('page.media.album')}}"><span class="text">Media album</span></a>
                                     </li>
                                     <li >
-                                        <a href="/page-media-gallery"><span class="text">Media gallery</span></a>
+                                        <a href="{{route('page.media.gallery')}}"><span class="text">Media gallery</span></a>
                                     </li>
                                 </ul>
                                 <!--/ END 2nd Level Menu -->
@@ -349,16 +349,16 @@
                                 <!-- START 2nd Level Menu -->
                                 <ul id="message" class="submenu collapse ">
                                     <li >
-                                        <a href="/page-message-bubble"><span class="text">Bubble message</span></a>
+                                        <a href="{{route('page.message.bubble')}}"><span class="text">Bubble message</span></a>
                                     </li>
                                     <li >
-                                        <a href="/page-message-rich"><span class="text">Rich message</span></a>
+                                        <a href="{{route('page.message.rich')}}"><span class="text">Rich message</span></a>
                                     </li>
                                 </ul>
                                 <!--/ END 2nd Level Menu -->
                             </li>
                             <li >
-                                <a href="/page-timeline-v2">
+                                <a href="{{route('page.timeline.v2')}}">
                                     <span class="text">Timeline</span>
                                 </a>
                             </li>
@@ -367,10 +367,10 @@
                         <!--/ END 2nd Level Menu -->
                     </li>
                     <li >
-                        <a href="/chart-flot">
+                        <a href="{{route('chart.flot')}}">
                             <span class="figure"><i class="ico-stats-up"></i></span>
                             <span class="text">Charts</span>
-							<span class="number"><span class="label label-success">11</span></span>
+                            <span class="number"><span class="label label-success">11</span></span>
                         </a>
                     </li>
                     <li >
@@ -385,20 +385,20 @@
                         <ul id="maps" class="submenu collapse ">
                             <li class="submenu-header ellipsis">Maps</li>
                             <li >
-                                <a href="/maps-vector">
+                                <a href="{{route('maps.vector')}}">
                                     <span class="text">Vector</span>
                                     <span class="number"><span class="label label-info">U</span></span>
                                 </a>
                             </li>
                             <li >
-                                <a href="/maps-google">
+                                <a href="{{route('maps.google')}}">
                                     <span class="text">Google</span>
                                 </a>
                             </li>
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
-					<li >
+                    <li >
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#submenu1" data-parent=".topmenu">
                             <span class="figure">
                                 <i class="ico-sitemap"></i>
@@ -412,32 +412,32 @@
                             <li >
                                 <a href="javascript:void(0);" data-toggle="submenu" data-target="#submenu2" data-parent="#submenu">
                                     <span class="text">Menu Level 1.1</span>
-									<span class="arrow"></span>
+                                    <span class="arrow"></span>
                                 </a>
-								<ul id="submenu2" class="submenu collapse ">
-									<li class="submenu-header ellipsis">Menu Levels 1.1</li>
-									<li >
-										<a href="javascript:void(0);" data-toggle="submenu" data-target="#submenu3" data-parent="#submenu2">
-											<span class="text">Menu Level 2.1</span>
-											<span class="arrow"></span>
-										</a>
-										<ul id="submenu3" class="submenu collapse ">
-											<li class="submenu-header ellipsis">Menu Levels 2.1</li>
-											<li >
-												<a href="/#">
-													<span class="text">Menu Level 3.1</span>
-												</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
+                                <ul id="submenu2" class="submenu collapse ">
+                                    <li class="submenu-header ellipsis">Menu Levels 1.1</li>
+                                    <li >
+                                        <a href="javascript:void(0);" data-toggle="submenu" data-target="#submenu3" data-parent="#submenu2">
+                                            <span class="text">Menu Level 2.1</span>
+                                            <span class="arrow"></span>
+                                        </a>
+                                        <ul id="submenu3" class="submenu collapse ">
+                                            <li class="submenu-header ellipsis">Menu Levels 2.1</li>
+                                            <li >
+                                                <a href="/#">
+                                                    <span class="text">Menu Level 3.1</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                         <!--/ END 2nd Level Menu -->
                     </li>
-				</ul>
+                </ul>
                 <!--/ END Template Navigation/Menu -->
-				<!-- START Sidebar summary -->
+                <!-- START Sidebar summary -->
                 <!-- Summary -->
                 <h5 class="heading">Summary</h5>
                 <div class="wrapper">

@@ -11,133 +11,88 @@
  * | contains the "web" middleware group. Now create something great!
  * |
  */
-Route::group( [
+Route::group([
     'middleware' => 'auth'
 ], function () {
-    Route::get( '/', 'HomeController@index' );
+    Route::get('/', 'HomeController@index');
 
-    Route::get( '/layout/default', 			'LayoutController@default' )		->name('layout.default');
-    Route::get( '/layout/with-footer', 		'LayoutController@withFooter' )		->name('layout.withFooter');
-    Route::get( '/layout/reveal-header', 	'LayoutController@revealHeader' )	->name('layout.revealHeader');
-    Route::get( '/layout/fixed-header', 	'LayoutController@fixedHeader' )	->name('layout.fixedHeader');
-    Route::get( '/layout/fixed-sidebar', 	'LayoutController@fixedSidebar' )	->name('layout.fixedSidebar');
-    Route::get( '/layout/navbar-collapse', 	'LayoutController@navbarCollapse' )	->name('layout.navbarCollapse');
-    
-    Route::get( '/widget', 	'WidgetStatsController@index' )	->name('widget');
+    Route::get('/layout/default', 'LayoutController@default')->name('layout.default');
+    Route::get('/layout/with-footer', 'LayoutController@withFooter')->name('layout.withFooter');
+    Route::get('/layout/reveal-header', 'LayoutController@revealHeader')->name('layout.revealHeader');
+    Route::get('/layout/fixed-header', 'LayoutController@fixedHeader')->name('layout.fixedHeader');
+    Route::get('/layout/fixed-sidebar', 'LayoutController@fixedSidebar')->name('layout.fixedSidebar');
+    Route::get('/layout/navbar-collapse', 'LayoutController@navbarCollapse')->name('layout.navbarCollapse');
 
-    Route::get( '/component/animation', 'UiElementsController@animation')->name('component.animation');
-    Route::get( '/component/button', 'UiElementsController@button')->name('component.button');
-    Route::get( '/component/carousel', 'UiElementsController@carousel')->name('component.carousel');
-    Route::get( '/component/grid', 'UiElementsController@grid')->name('component.grid');
-    Route::get( '/component/icon', 'UiElementsController@icon')->name('component.icon');
-    Route::get( '/component/loading', 'UiElementsController@loading')->name('component.loading');
-    Route::get( '/component/notification', 'UiElementsController@notification')->name('component.notification');
-    Route::get( '/component/panel', 'UiElementsController@panel')->name('component.panel');
-    Route::get( '/component/pricing', 'UiElementsController@pricing')->name('component.pricing');
-    Route::get( '/component/slider', 'UiElementsController@slider')->name('component.slider');
-    Route::get( '/component/sortable', 'UiElementsController@sortable')->name('component.sortable');
-    Route::get( '/component/tabsaccordion', 'UiElementsController@tabsaccordion')->name('component.tabsaccordion');
-    Route::get( '/component/typography', 'UiElementsController@typography')->name('component.typography');
-    Route::get( '/component/others', 'UiElementsController@others')->name('component.others');
+    Route::get('/widget', 'WidgetStatsController@index')->name('widget');
 
-    Route::get( '/form-element', function () {
-        return view( 'form-element' );
-    } );
-    Route::get( '/form-layout', function () {
-        return view( 'form-layout' );
-    } );
-    Route::get( '/form-validation', function () {
-        return view( 'form-validation' );
-    } );
-    Route::get( '/form-wizard', function () {
-        return view( 'form-wizard' );
-    } );
-    Route::get( '/form-wysiwyg', function () {
-        return view( 'form-wysiwyg' );
-    } );
-    Route::get( '/form-xeditable', function () {
-        return view( 'form-xeditable' );
-    } );
-    Route::get( '/form-fileupload', function () {
-        return view( 'form-fileupload' );
-    } );
-    Route::get( '/form-imagecrop', function () {
-        return view( 'form-imagecrop' );
-    } );
-    Route::get( '/table-default', function () {
-        return view( 'table-default' );
-    } );
-    Route::get( '/table-datatable', function () {
-        return view( 'table-datatable' );
-    } );
-    Route::get( '/page-starter', function () {
-        return view( 'page-starter' );
-    } );
-    Route::get( '/page-blog-default', function () {
-        return view( 'page-blog-default' );
-    } );
-    Route::get( '/page-blog-grid', function () {
-        return view( 'page-blog-grid' );
-    } );
-    Route::get( '/page-blog-single', function () {
-        return view( 'page-blog-single' );
-    } );
-    Route::get( '/page-calendar', function () {
-        return view( 'page-calendar' );
-    } );
-    Route::get( '/page-email-inbox', function () {
-        return view( 'page-email-inbox' );
-    } );
-    Route::get( '/page-email-view', function () {
-        return view( 'page-email-view' );
-    } );
-    Route::get( '/page-error-404', function () {
-        return view( 'page-error-404' );
-    } );
-    Route::get( '/page-error-403', function () {
-        return view( 'page-error-403' );
-    } );
-    Route::get( '/page-error-500', function () {
-        return view( 'page-error-500' );
-    } );
-    Route::get( '/page-faq', function () {
-        return view( 'page-faq' );
-    } );
-    Route::get( '/page-invoice', function () {
-        return view( 'page-invoice' );
-    } );
+    Route::get('/component/animation', 'UiElementsController@animation')->name('component.animation');
+    Route::get('/component/button', 'UiElementsController@button')->name('component.button');
+    Route::get('/component/carousel', 'UiElementsController@carousel')->name('component.carousel');
+    Route::get('/component/grid', 'UiElementsController@grid')->name('component.grid');
+    Route::get('/component/icon', 'UiElementsController@icon')->name('component.icon');
+    Route::get('/component/loading', 'UiElementsController@loading')->name('component.loading');
+    Route::get('/component/notification', 'UiElementsController@notification')->name('component.notification');
+    Route::get('/component/panel', 'UiElementsController@panel')->name('component.panel');
+    Route::get('/component/pricing', 'UiElementsController@pricing')->name('component.pricing');
+    Route::get('/component/slider', 'UiElementsController@slider')->name('component.slider');
+    Route::get('/component/sortable', 'UiElementsController@sortable')->name('component.sortable');
+    Route::get('/component/tabsaccordion', 'UiElementsController@tabsaccordion')->name('component.tabsaccordion');
+    Route::get('/component/typography', 'UiElementsController@typography')->name('component.typography');
+    Route::get('/component/others', 'UiElementsController@others')->name('component.others');
 
-    Route::resource( 'page-profile', 'Auth\ProfileController' );
-    Route::get( '/page-login-returned', function () {
-        return view( 'page-login-returned' );
-    } );
-    Route::get( '/register', function () {
-        return view( 'register' );
-    } );
-    Route::get( '/page-media-album', function () {
-        return view( 'page-media-album' );
-    } );
-    Route::get( '/page-media-gallery', function () {
-        return view( 'page-media-gallery' );
-    } );
-    Route::get( '/page-message-bubble', function () {
-        return view( 'page-message-bubble' );
-    } );
-    Route::get( '/page-message-rich', function () {
-        return view( 'page-message-rich' );
-    } );
-    Route::get( '/page-timeline-v2', function () {
-        return view( 'page-timeline-v2' );
-    } );
-    Route::get( '/chart-flot', function () {
-        return view( 'chart-flot' );
-    } );
-    Route::get( '/maps-vector', function () {
-        return view( 'maps-vector' );
-    } );
-    Route::get( '/maps-google', function () {
-        return view( 'maps-google' );
-    } );
-} );
+    Route::group([
+        'prefix' => 'form'
+    ], function () {
+
+        Route::get('/element', 'FormController@element')->name('form.element');
+        Route::get('/layout', 'FormController@layout')->name('form.layout');
+        Route::get('/validation', 'FormController@validation')->name('form.validation');
+        Route::get('/wizard', 'FormController@wizard')->name('form.wizard');
+        Route::get('/wysiwyg', 'FormController@wysiwyg')->name('form.wysiwyg');
+        Route::get('/xeditable', 'FormController@xeditable')->name('form.xeditable');
+        Route::get('/fileupload', 'FormController@fileupload')->name('form.fileupload');
+        Route::get('/imagecrop', 'FormController@imagecrop')->name('form.imagecrop');
+    });
+
+    Route::group([
+        'prefix' => 'table'
+    ], function () {
+
+        Route::get('default', 'TableController@default')->name('table.default');
+        Route::get('datatable', 'TableController@datatable')->name('table.datatable');
+    });
+
+    Route::group([
+        'prefix' => 'page'
+    ], function () {
+        Route::get('starter', 'PageController@starter')->name('page.starter');
+        Route::get('blogdefault', 'PageController@blogdefault')->name('page.blog.default');
+        Route::get('bloggrid', 'PageController@bloggrid')->name('page.blog.grid');
+        Route::get('blogsingle', 'PageController@blogsingle')->name('page.blog.single');
+        Route::get('calendar', 'PageController@calendar')->name('page.calendar');
+        Route::get('emailinbox', 'PageController@emailinbox')->name('page.email.inbox');
+        Route::get('emailview', 'PageController@emailview')->name('page.email.view');
+        Route::get('error404', 'PageController@error404')->name('page.error.404');
+        Route::get('error403', 'PageController@error403')->name('page.error.403');
+        Route::get('error500', 'PageController@error500')->name('page.error.500');
+        Route::get('faq', 'PageController@faq')->name('page.faq');
+        Route::get('invoice', 'PageController@invoice')->name('page.invoice');
+        Route::get('loginreturned', 'PageController@loginreturned')->name('page.login.returned');
+        Route::get('mediaalbum', 'PageController@mediaalbum')->name('page.media.album');
+        Route::get('mediagallery', 'PageController@mediagallery')->name('page.media.gallery');
+        Route::get('messagebubble', 'PageController@messagebubble')->name('page.message.bubble');
+        Route::get('messagerich', 'PageController@messagerich')->name('page.message.rich');
+        Route::get('timelinev2', 'PageController@timelinev2')->name('page.timeline.v2');
+    });
+    Route::get('flot', 'ChartController@flot')->name('chart.flot');
+    Route::get('vector', 'MapsController@vector')->name('maps.vector');
+    Route::get('google', 'MapsController@google')->name('maps.google');
+});
 
 Auth::routes();
+
+Route::resource('page-profile', 'Auth\ProfileController');
+
+Route::get('/register', function () {
+    return view('register');
+});
