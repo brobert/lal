@@ -29,7 +29,7 @@
         <!--/ Application stylesheet -->
 
         <!-- Theme stylesheet -->
-		<link rel="stylesheet" href="{{ asset('/css/themes/theme.css') }}">
+        <link rel="stylesheet" href="{{ asset('/css/themes/theme.css') }}">
         <!--/ Theme stylesheet -->
 
         <!-- modernizr script -->
@@ -42,7 +42,7 @@
     <!-- START Body -->
     <body>
 
-		@yield('content')
+        @yield('content')
 
         <!-- START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time) -->
         <!-- Application and vendor script : mandatory -->

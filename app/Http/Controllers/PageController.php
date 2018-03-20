@@ -15,24 +15,6 @@ class PageController extends Controller
         return $this->respond(200);
     }
 
-    public function blogdefault(Request $request)
-    {
-        $this->setView('page-blog-default');
-        return $this->respond(200);
-    }
-
-    public function bloggrid(Request $request)
-    {
-        $this->setView('page-blog-grid');
-        return $this->respond(200);
-    }
-
-    public function blogsingle(Request $request)
-    {
-        $this->setView('page-blog-single');
-        return $this->respond(200);
-    }
-
     public function calendar(Request $request)
     {
         $this->setView('page-calendar');

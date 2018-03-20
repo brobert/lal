@@ -18,7 +18,7 @@
 
                 <!-- Register form -->
                 <form class="panel -auth-form" name="form-register" action="/register" method="post">
-                	{{csrf_field()}}
+                    {{csrf_field()}}
                     <div class="panel-body">
                         <div class="form-group">
                             <label class="control-label">@lang('auth.register.label.name')</label>

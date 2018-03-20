@@ -29,7 +29,7 @@
         <!--/ Application stylesheet -->
 
         <!-- Theme stylesheet -->
-		<link rel="stylesheet" href="/css/themes/theme.css">
+        <link rel="stylesheet" href="/css/themes/theme.css">
         <!--/ Theme stylesheet -->
 
         <!-- modernizr script -->
@@ -78,16 +78,16 @@
                     </li>
                     <!--/ Offcanvas left -->
 
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-							<ul class="dropdown-menu">
-								<li><a href="#">First item</a></li>
-								<li><a href="#">Second item</a></li>
-								<li class="divider"></li>
-								<li><a href="#">Third item</a></li>
-							</ul>
-					</li>
-					
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">First item</a></li>
+                                <li><a href="#">Second item</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Third item</a></li>
+                            </ul>
+                    </li>
+                    
                 </ul>
                 <!--/ END Left nav -->
 
@@ -104,10 +104,10 @@
 
                 <!-- START Right nav -->
                 <ul class="nav navbar-nav navbar-right">
-					@include('partials.notification_dropdown')
-					
+                    @include('partials.notification_dropdown')
+                    
                     @include('partials.auth_dropdown')
-					<!-- Offcanvas right This menu will take position at the top of template header (mobile only). Make sure that only #header have the `position: relative`, or it may cause unwanted behavior -->
+                    <!-- Offcanvas right This menu will take position at the top of template header (mobile only). Make sure that only #header have the `position: relative`, or it may cause unwanted behavior -->
                     <li class="navbar-main">
                         <a href="javascript:void(0);" data-toggle="sidebar" data-direction="rtl" rel="tooltip" title="Feed / contact sidebar">
                             <span class="meta">
@@ -123,11 +123,11 @@
             <!--/ END Toolbar -->
         </header>
         <!--/ END Template Header -->
-		
+        
 
         @include('partials.left_aside')
-		
-		@include('partials.right_aside')
+        
+        @include('partials.right_aside')
 
         <!-- START Template Main -->
         <section id="main" role="main">
@@ -705,7 +705,7 @@
 
         <!-- Plugins and page level script : optional -->
         <script type="text/javascript" src="/js/pace.min.js"></script>
-		<script type="text/javascript" src="/plugins/steps/js/jquery-steps.js"></script>
+        <script type="text/javascript" src="/plugins/steps/js/jquery-steps.js"></script>
         <script type="text/javascript" src="/plugins/parsley/js/parsley.js"></script>
         <script type="text/javascript" src="/plugins/inputmask/js/inputmask.js"></script>
         <script type="text/javascript" src="/js/backend/forms/wizard.js"></script>

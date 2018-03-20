@@ -1,4 +1,4 @@
-							<div class="widget panel bgcolor-warning">
+                            <div class="widget panel bgcolor-warning">
                                 <!-- panel body -->
                                 <div class="panel-body">
                                     <div class="clearfix">

@@ -244,10 +244,10 @@
                                 <!-- START 2nd Level Menu -->
                                 <ul id="blog" class="submenu collapse ">
                                     <li >
-                                        <a href="{{route('page.blog.default')}}"><span class="text">Blog default</span></a>
+                                        <a href="{{route('page.blog',['default'])}}"><span class="text">Blog default</span></a>
                                     </li>
                                     <li >
-                                        <a href="{{route('page.blog.grid')}}"><span class="text">Blog grid</span></a>
+                                        <a href="{{route('page.blog',['grid'])}}"><span class="text">Blog grid</span></a>
                                     </li>
                                     <li >
                                         <a href="{{route('page.blog.single')}}"><span class="text">Single post</span></a>

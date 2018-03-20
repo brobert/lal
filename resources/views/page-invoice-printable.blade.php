@@ -28,7 +28,7 @@
         <!--/ Application stylesheet -->
 
         <!-- Theme stylesheet -->
-		<link rel="stylesheet" href="/css/themes/theme.css">
+        <link rel="stylesheet" href="/css/themes/theme.css">
         <!--/ Theme stylesheet -->
 
         <!-- modernizr script -->

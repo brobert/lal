@@ -28,7 +28,7 @@
         <!--/ Application stylesheet -->
 
         <!-- Theme stylesheet -->
-		<link rel="stylesheet" href="/css/themes/theme.css">
+        <link rel="stylesheet" href="/css/themes/theme.css">
         <!--/ Theme stylesheet -->
 
         <!-- modernizr script -->
@@ -82,7 +82,7 @@
         <!--/ Application and vendor script : mandatory -->
 
         <!-- Plugins and page level script : optional -->
-		<script type="text/javascript" src="/js/pace.min.js"></script>
+        <script type="text/javascript" src="/js/pace.min.js"></script>
         <!--/ Plugins and page level script : optional -->
         <!--/ END JAVASCRIPT SECTION -->
     </body>

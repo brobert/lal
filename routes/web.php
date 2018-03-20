@@ -63,12 +63,15 @@ Route::group([
     });
 
     Route::group([
+        'prefix' => 'blog'
+    ], function () {
+        Route::get('{viewType}', 'BlogPostController@index')->name('page.blog');
+        Route::get('single/{postid?}', 'BlogPostController@show')->name('page.blog.single');
+    });
+    Route::group([
         'prefix' => 'page'
     ], function () {
         Route::get('starter', 'PageController@starter')->name('page.starter');
-        Route::get('blogdefault', 'PageController@blogdefault')->name('page.blog.default');
-        Route::get('bloggrid', 'PageController@bloggrid')->name('page.blog.grid');
-        Route::get('blogsingle', 'PageController@blogsingle')->name('page.blog.single');
         Route::get('calendar', 'PageController@calendar')->name('page.calendar');
         Route::get('emailinbox', 'PageController@emailinbox')->name('page.email.inbox');
         Route::get('emailview', 'PageController@emailview')->name('page.email.view');
@@ -85,6 +88,7 @@ Route::group([
         Route::get('timelinev2', 'PageController@timelinev2')->name('page.timeline.v2');
     });
     Route::get('flot', 'ChartController@flot')->name('chart.flot');
+    Route::post('flot/data/{type}', 'ChartController@flotData')->name('flot.data');
     Route::get('vector', 'MapsController@vector')->name('maps.vector');
     Route::get('google', 'MapsController@google')->name('maps.google');
 });

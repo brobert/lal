@@ -28,6 +28,11 @@
     var flotDemo = function (element, url) {
         this.element = element;
         this.url     = '../'+url; // change this to your server url
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
     };
 
     flotDemo.prototype = {
@@ -42,6 +47,12 @@
                 cache: false,
                 type: 'POST',
                 dataType: 'json',
+                data: {
+                    dupa: 1,
+                },
+                xhrFields: {
+                    withCredentials: true,
+                 }
             }).done(function (data) {
                 // init flot
                 $.plot($(self.element), data, option);
@@ -57,7 +68,7 @@
     $(function() {
         if($('#chart-bar').length !== 0) {
             // Chart option/setting
-            var chart  = new flotDemo('#chart-bar', '/api/flot/bar'),
+            var chart  = new flotDemo('#chart-bar', 'flot/data/bar'),
                 panel  = $('#chart-bar').parents('.panel'),
                 option = {
                     series: {
@@ -66,7 +77,7 @@
                             lineWidth: 0,
                             show: true,
                             barWidth: 0.6,
-                            fill: 0.9
+                            fill: 0.2
                         }
                     },
                     grid: {
@@ -102,7 +113,7 @@
     $(function() {
         if($('#chart-bar-stacked').length !== 0) {
             // Chart option/setting
-            var chart  = new flotDemo('#chart-bar-stacked', '/api/flot/barstacked'),
+            var chart  = new flotDemo('#chart-bar-stacked', 'flot/data/barstacked'),
                 option = {
                     series: {
                         stack: true,
@@ -147,7 +158,7 @@
     $(function() {
         if($('#chart-area').length !== 0) {
             // Chart option/setting
-            var chart  = new flotDemo('#chart-area', '/api/flot/area'),
+            var chart  = new flotDemo('#chart-area', 'flot/data/area'),
                 option = {
                     series: {
                         lines: {
@@ -195,7 +206,7 @@
     $(function() {
         if($('#chart-area-spline').length !== 0) {
             // Chart option/setting
-            var chart  = new flotDemo('#chart-area-spline', '/api/flot/areaspline'),
+            var chart  = new flotDemo('#chart-area-spline', 'flot/data/areaspline'),
                 option = {
                     series: {
                         lines: { show: false },
@@ -246,7 +257,7 @@
     $(function() {
         if($('#chart-line').length !== 0) {
             // Chart option/setting
-            var chart  = new flotDemo('#chart-line', '/api/flot/line'),
+            var chart  = new flotDemo('#chart-line', 'flot/data/line'),
                 option = {
                     series: {
                         lines: {
@@ -291,7 +302,7 @@
     $(function() {
         if($('#chart-line-spline').length !== 0) {
             // Chart option/setting
-            var chart  = new flotDemo('#chart-line-spline', '/api/flot/linespline'),
+            var chart  = new flotDemo('#chart-line-spline', 'flot/data/linespline'),
                 option = {
                     series: {
                         lines: { show: false },
@@ -389,7 +400,7 @@
     $(function() {
         if($('#chart-pie1').length !== 0) {
             // Chart option/setting
-            var chart  = new flotDemo('#chart-pie1', '/api/flot/pie'),
+            var chart  = new flotDemo('#chart-pie1', 'flot/data/pie'),
                 option = {
                     series: {
                         pie: { 
@@ -409,7 +420,7 @@
     $(function() {
         if($('#chart-pie2').length !== 0) {
             // Chart option/setting
-            var chart  = new flotDemo('#chart-pie2', '/api/flot/pie'),
+            var chart  = new flotDemo('#chart-pie2', 'flot/data/pie'),
                 option = {
                     series: {
                         pie: { 

@@ -2,14 +2,17 @@
 
 namespace App\Traits;
 
+
 use Illuminate\Support\Facades\View;
 use Auth;
 use Log;
+
 
 trait ResponseTrait {
 
     /**
      * handler for respons data ( for view or JSON )
+     *
      * @var $data {array}
      */
     protected $data = [];
@@ -17,11 +20,9 @@ trait ResponseTrait {
     protected $view = '';
 
     /**
-     *
      */
-    protected function setView( $viewName )
+    protected function setView($viewName)
     {
-
         $format = '%s%s';
         $this->view = $viewName;
     }
@@ -29,31 +30,29 @@ trait ResponseTrait {
     /**
      *
      * @method setData
-     * AppController
+     *         AppController
      * @param string|array $keyOrData
      * @param unknown $data
      */
-    protected function setData( $keyOrData, $data = null )
+    protected function setData($keyOrData, $data = null)
     {
-        if ( $data === null )
-        {
+        if ($data === null) {
             $this->data = $keyOrData;
-        }
-        else if ( is_string( $keyOrData ) && $data !== null )
-        {
-            $this->data[ $keyOrData ] = $data;
-        }
+        } else
+            if (is_string($keyOrData) && $data !== null) {
+                $this->data [$keyOrData] = $data;
+                Log::debug($data);
+            }
     }
 
-    protected function respond( $httpCode = 200 )
+    protected function respond($httpCode = 200)
     {
-        if ( !View::exists($this->view)) {
+        if (! View::exists($this->view)) {
             $this->view = 'errors.503';
             $httpCode = 404;
         }
-//         Log::debug('try to load view: ' . $this->view . print_r($this->data, 1) );
-        $this->data['user'] = Auth::user();
+        // Log::debug('try to load view: ' . $this->view . print_r($this->data, 1) );
+        $this->data ['user'] = Auth::user();
         return response()->view($this->view, $this->data, $httpCode);
     }
-
 }

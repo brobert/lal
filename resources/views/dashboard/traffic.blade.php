@@ -1,4 +1,4 @@
-    						<div class="panel panel-default">
+                            <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h5 class="panel-title"><i class="ico-globe mr5"></i>Traffic</h5>
                                 </div>
