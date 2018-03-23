@@ -64,7 +64,7 @@
                                     <div class="panel-heading pt10">
                                         <div class="panel-toolbar">
                                             <h5 class="semibold nm ellipsis">
-                                                Website Stats 
+                                                Website Stats
                                             </h5>
                                         </div>
                                     </div>
@@ -77,7 +77,7 @@
                                     <!-- panel-footer -->
                                     <div class="panel-footer hidden-xs">
                                         <ul class="nav nav-section nav-justified">
-                                                        @each('dashboard.chartStats', $stats, 'data')
+                                                @each('dashboard.chartStats', $stats, 'data')
                                         </ul>
                                     </div>
                                     <!--/ panel-footer -->
@@ -178,11 +178,11 @@
                             @include('dashboard.income', ['data' => $income])
                             @include('dashboard.weather')
                             @include('dashboard.traffic')
-                            
 
 
 
-    
+
+
 
 
                         </div>

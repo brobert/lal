@@ -47,9 +47,7 @@
                 cache: false,
                 type: 'POST',
                 dataType: 'json',
-                data: {
-                    dupa: 1,
-                },
+                data: {},
                 xhrFields: {
                     withCredentials: true,
                  }

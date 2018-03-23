@@ -3,7 +3,7 @@
         <h4 class="semibold nm"><i class="ico-dollar mr5"></i>@lang('dashboard.income.title')</h4>
         <h2 class="thin mt5 text-muted">
             {{$data['value'] < 0 ? '-' : '+'}}
-            <span data-toggle="counterup">{{abs($data['value'])}}</span>
+            <span data-toggle="counterup">@fnum(abs($data['value']), 1)</span>
         </h2>
         <!-- chart -->
         <div class="chart" style="height:120px;" id="stats1"></div>

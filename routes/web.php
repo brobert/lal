@@ -14,7 +14,7 @@
 Route::group([
     'middleware' => 'auth'
 ], function () {
-    Route::get('/', 'HomeController@index');
+    Route::get('/', 'HomeController@index')->name('home');
 
     Route::get('/layout/default', 'LayoutController@default')->name('layout.default');
     Route::get('/layout/with-footer', 'LayoutController@withFooter')->name('layout.withFooter');

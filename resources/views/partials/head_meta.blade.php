@@ -4,6 +4,7 @@
 <meta name="author" content="optimisticdesigns">
 <meta name="description" content="Lander.v2 Admin is a clean and flat backend built with twitter bootstrap">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="csrf-token" content="{{ csrf_token() }}">
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/image/touch/apple-touch-icon-144x144-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/image/touch/apple-touch-icon-114x114-precomposed.png">
