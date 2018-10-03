@@ -85,7 +85,7 @@
                 // content
                 var pcontent = '';
                 pcontent += '<h5 class=semibold>';
-                pcontent += '<img class="mr10" src="../image/icons/bloggingservices.png" width="42" height="42" />';
+                pcontent += '<img class="mr10" src="/image/icons/bloggingservices.png" width="42" height="42" />';
                 pcontent += calEvent.title;
                 pcontent += '</h5>';
                 pcontent += '<hr/>';
