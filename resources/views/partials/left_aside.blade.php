@@ -10,6 +10,23 @@
                             <span class="text">@lang('menu.dashboard')</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="submenu" data-target="#hurra" data-parent=".topmenu">
+                            <span class="figure"><i class="ico-office"></i></span>
+                            <span class="text">@lang('menu.hurra')</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <!-- START 2nd Level Hurra Menu -->
+                        <ul id="hurra" class="submenu collapse ">
+                            <li class="submenu-header ellipsis">@lang('menu.hurra')</li>
+                            <li >
+                                <a href="{{route('hurra.index')}}">
+                                    <span class="text">@lang('menu.hurra.index')</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--/ END 2nd Level Menu -->
+                    </li>
                     <li >
                         <a href="javascript:void(0);" data-toggle="submenu" data-target="#layout" data-parent=".topmenu">
                             <span class="figure"><i class="ico-grid"></i></span>
@@ -306,7 +323,7 @@
                                 </a>
                             </li>
                             <li >
-                                <a href="{{route('page-profile.index')}}">
+                                <a href="{{route('profile.index')}}">
                                     <span class="text">Profile</span>
                                 </a>
                             </li>

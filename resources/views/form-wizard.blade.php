@@ -3,8 +3,8 @@
     <!-- START Head -->
     <head>
         <!-- START META SECTION -->
-		@include('partials.head_meta')
-		<!--/ END META SECTION -->
+        @include('partials.head_meta')
+        <!--/ END META SECTION -->
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
@@ -31,12 +31,12 @@
     <!-- START Body -->
     <body>
         <!-- START Template Header -->
-		@include('partials.template_header')
-		<!--/ END Template Header -->
-        
+        @include('partials.template_header')
+        <!--/ END Template Header -->
+
 
         @include('partials.left_aside')
-        
+
         @include('partials.right_aside')
 
         <!-- START Template Main -->
@@ -77,7 +77,7 @@
                                 <h3 class="panel-title"><i class="ico-tshirt mr5"></i> T-Shirt Order Form</h3>
                             </div>
                             <!--/ panel heading/header -->
-                            <!-- START Form Wizard -->         
+                            <!-- START Form Wizard -->
                             <form class="form-horizontal form-bordered" action="" id="wizard-validate">
                                 <!-- Wizard Container 1 -->
                                 <div class="wizard-title">Customize Order</div>
@@ -338,7 +338,7 @@
                                 </div>
                                 <!-- Wizard Container 4 -->
                             </form>
-                            <!--/ END Form Wizard --> 
+                            <!--/ END Form Wizard -->
                         </div>
                         <!--/ END Panel -->
                     </div>
@@ -362,7 +362,7 @@
                                 <h3 class="panel-title"><i class="ico-tshirt mr5"></i> T-Shirt Order Form</h3>
                             </div>
                             <!--/ panel heading/header -->
-                            <!-- START Form Wizard -->         
+                            <!-- START Form Wizard -->
                             <form class="form-horizontal form-bordered" action="" id="wizard">
                                 <!-- Wizard Container 1 -->
                                 <div class="wizard-title">Customize Order</div>
@@ -591,7 +591,7 @@
                                 </div>
                                 <!--/ Wizard Container 3 -->
                             </form>
-                            <!--/ END Form Wizard --> 
+                            <!--/ END Form Wizard -->
                         </div>
                         <!--/ END Panel -->
                     </div>

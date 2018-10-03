@@ -1,6 +1,9 @@
 <?php
 use Faker\Generator as Faker;
 
+use App\Models\Country;
+use App\Models\Language;
+use App\Models\TimeZone;
 /*
  * |--------------------------------------------------------------------------
  * | Model Factories
@@ -16,14 +19,15 @@ $factory->define(App\User::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
-        'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm',  // secret
+        'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
         'remember_token' => str_random(10),
         'photo' => '/image/avatar/avatar7.jpg',
-        'country' => $faker->countryCode(),
-        'location' => $faker->city(),
+        'city' => $faker->city(),
         'website' => $faker->url(),
-        'bio' => '',
-        'language' => $faker->languageCode(),
-        'tz' => $faker->timezone()
+        'bio' => $faker->text(),
+        'country_id' => Country::inRandomOrder()->first()->id,
+        'language_id' => Language::inRandomOrder()->first()->id,
+        'timezone_id' => TimeZone::inRandomOrder()->first()->id
+
     ];
 });

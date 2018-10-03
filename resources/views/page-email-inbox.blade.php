@@ -3,8 +3,8 @@
     <!-- START Head -->
     <head>
         <!-- START META SECTION -->
-		@include('partials.head_meta')
-		<!--/ END META SECTION -->
+        @include('partials.head_meta')
+        <!--/ END META SECTION -->
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
@@ -35,11 +35,11 @@
     <!-- START Body -->
     <body>
         <!-- START Template Header -->
-		@include('partials.template_header')
-		<!--/ END Template Header -->
+        @include('partials.template_header')
+        <!--/ END Template Header -->
 
         @include('partials.left_aside')
-        
+
         @include('partials.right_aside')
 
         <!-- START Template Main -->
@@ -85,13 +85,13 @@
                             <!-- panel toolbar -->
                             <div class="panel-toolbar">
                                 <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#ModalComposeMessage">
-                                    <i class="ico-pencil5"></i> 
+                                    <i class="ico-pencil5"></i>
                                     <span class="semibold">Compose Email</span>
                                 </button>
                             </div>
                         </div>
                         <!--/ panel heading -->
-                        
+
                         <!-- panel body -->
                         <div class="panel-body">
                             <!-- Browse -->
@@ -227,15 +227,15 @@
                                 <tbody>
                                     <tr>
                                         <td width="2%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox1" value="1" data-toggle="selectrow" data-target="tr">  
-                                                <label for="customcheckbox1"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox1" value="1" data-toggle="selectrow" data-target="tr">
+                                                <label for="customcheckbox1"></label>
                                             </div>
                                         </td>
                                         <td width="2%">
-                                            <span class="checkbox checkbox-icon icon-star">  
-                                                <input type="checkbox" id="checkboxicon1" value="1">  
-                                                <label for="checkboxicon1"></label>   
+                                            <span class="checkbox checkbox-icon icon-star">
+                                                <input type="checkbox" id="checkboxicon1" value="1">
+                                                <label for="checkboxicon1"></label>
                                             </span>
                                         </td>
                                         <td class="meta">
@@ -244,7 +244,7 @@
                                         </td>
                                         <td class="message">
                                             <h5 class="heading">
-                                                <i class="ico-square text-danger mr5"></i> 
+                                                <i class="ico-square text-danger mr5"></i>
                                                 <i class="ico-attachment text-muted mr5"></i>
                                                 <a href="page-email-view.html">Click me. I'll take you to the email view</a>
                                             </h5>
@@ -254,15 +254,15 @@
                                     </tr>
                                     <tr class="read">
                                         <td width="2%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox2" value="1" data-toggle="selectrow" data-target="tr">  
-                                                <label for="customcheckbox2"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox2" value="1" data-toggle="selectrow" data-target="tr">
+                                                <label for="customcheckbox2"></label>
                                             </div>
                                         </td>
                                         <td width="2%">
-                                            <span class="checkbox checkbox-icon icon-star">  
-                                                <input type="checkbox" id="checkboxicon2" value="1">  
-                                                <label for="checkboxicon2"></label>   
+                                            <span class="checkbox checkbox-icon icon-star">
+                                                <input type="checkbox" id="checkboxicon2" value="1">
+                                                <label for="checkboxicon2"></label>
                                             </span>
                                         </td>
                                         <td class="meta">
@@ -279,15 +279,15 @@
                                     </tr>
                                     <tr class="read">
                                         <td width="2%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox3" value="1" data-toggle="selectrow" data-target="tr">  
-                                                <label for="customcheckbox3"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox3" value="1" data-toggle="selectrow" data-target="tr">
+                                                <label for="customcheckbox3"></label>
                                             </div>
                                         </td>
                                         <td width="2%">
-                                            <span class="checkbox checkbox-icon icon-star">  
-                                                <input type="checkbox" id="checkboxicon3" value="1">  
-                                                <label for="checkboxicon3"></label>   
+                                            <span class="checkbox checkbox-icon icon-star">
+                                                <input type="checkbox" id="checkboxicon3" value="1">
+                                                <label for="checkboxicon3"></label>
                                             </span>
                                         </td>
                                         <td class="meta">
@@ -304,15 +304,15 @@
                                     </tr>
                                     <tr class="read">
                                         <td width="2%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox4" value="1" data-toggle="selectrow" data-target="tr">  
-                                                <label for="customcheckbox4"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox4" value="1" data-toggle="selectrow" data-target="tr">
+                                                <label for="customcheckbox4"></label>
                                             </div>
                                         </td>
                                         <td width="2%">
-                                            <span class="checkbox checkbox-icon icon-star">  
-                                                <input type="checkbox" id="checkboxicon4" value="1" checked="">  
-                                                <label for="checkboxicon4"></label>   
+                                            <span class="checkbox checkbox-icon icon-star">
+                                                <input type="checkbox" id="checkboxicon4" value="1" checked="">
+                                                <label for="checkboxicon4"></label>
                                             </span>
                                         </td>
                                         <td class="meta">
@@ -321,7 +321,7 @@
                                         </td>
                                         <td class="message">
                                             <h5 class="heading">
-                                                <i class="ico-square text-default mr5"></i> 
+                                                <i class="ico-square text-default mr5"></i>
                                                 <a href="javascript:void(0);">Update to the dropbox Term Of Service</a>
                                             </h5>
                                             <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -330,15 +330,15 @@
                                     </tr>
                                     <tr>
                                         <td width="2%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox5" value="1" data-toggle="selectrow" data-target="tr">  
-                                                <label for="customcheckbox5"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox5" value="1" data-toggle="selectrow" data-target="tr">
+                                                <label for="customcheckbox5"></label>
                                             </div>
                                         </td>
                                         <td width="2%">
-                                            <span class="checkbox checkbox-icon icon-star">  
-                                                <input type="checkbox" id="checkboxicon5" value="1" checked="">  
-                                                <label for="checkboxicon5"></label>   
+                                            <span class="checkbox checkbox-icon icon-star">
+                                                <input type="checkbox" id="checkboxicon5" value="1" checked="">
+                                                <label for="checkboxicon5"></label>
                                             </span>
                                         </td>
                                         <td class="meta">
@@ -355,15 +355,15 @@
                                     </tr>
                                     <tr>
                                         <td width="2%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox6" value="1" data-toggle="selectrow" data-target="tr">  
-                                                <label for="customcheckbox6"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox6" value="1" data-toggle="selectrow" data-target="tr">
+                                                <label for="customcheckbox6"></label>
                                             </div>
                                         </td>
                                         <td width="2%">
-                                            <span class="checkbox checkbox-icon icon-star">  
-                                                <input type="checkbox" id="checkboxicon6" value="1">  
-                                                <label for="checkboxicon6"></label>   
+                                            <span class="checkbox checkbox-icon icon-star">
+                                                <input type="checkbox" id="checkboxicon6" value="1">
+                                                <label for="checkboxicon6"></label>
                                             </span>
                                         </td>
                                         <td class="meta">
@@ -380,15 +380,15 @@
                                     </tr>
                                     <tr>
                                         <td width="2%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox7" value="1" data-toggle="selectrow" data-target="tr">  
-                                                <label for="customcheckbox7"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox7" value="1" data-toggle="selectrow" data-target="tr">
+                                                <label for="customcheckbox7"></label>
                                             </div>
                                         </td>
                                         <td width="2%">
-                                            <span class="checkbox checkbox-icon icon-star">  
-                                                <input type="checkbox" id="checkboxicon7" value="1">  
-                                                <label for="checkboxicon7"></label>   
+                                            <span class="checkbox checkbox-icon icon-star">
+                                                <input type="checkbox" id="checkboxicon7" value="1">
+                                                <label for="checkboxicon7"></label>
                                             </span>
                                         </td>
                                         <td class="meta">
@@ -405,15 +405,15 @@
                                     </tr>
                                     <tr class="read">
                                         <td width="2%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox8" value="1" data-toggle="selectrow" data-target="tr">  
-                                                <label for="customcheckbox8"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox8" value="1" data-toggle="selectrow" data-target="tr">
+                                                <label for="customcheckbox8"></label>
                                             </div>
                                         </td>
                                         <td width="2%">
-                                            <span class="checkbox checkbox-icon icon-star">  
-                                                <input type="checkbox" id="checkboxicon8" value="1">  
-                                                <label for="checkboxicon8"></label>   
+                                            <span class="checkbox checkbox-icon icon-star">
+                                                <input type="checkbox" id="checkboxicon8" value="1">
+                                                <label for="checkboxicon8"></label>
                                             </span>
                                         </td>
                                         <td class="meta">
@@ -431,15 +431,15 @@
                                     </tr>
                                     <tr>
                                         <td width="2%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox9" value="1" data-toggle="selectrow" data-target="tr">  
-                                                <label for="customcheckbox9"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox9" value="1" data-toggle="selectrow" data-target="tr">
+                                                <label for="customcheckbox9"></label>
                                             </div>
                                         </td>
                                         <td width="2%">
-                                            <span class="checkbox checkbox-icon icon-star">  
-                                                <input type="checkbox" id="checkboxicon9" value="1" checked="">  
-                                                <label for="checkboxicon9"></label>   
+                                            <span class="checkbox checkbox-icon icon-star">
+                                                <input type="checkbox" id="checkboxicon9" value="1" checked="">
+                                                <label for="checkboxicon9"></label>
                                             </span>
                                         </td>
                                         <td class="meta">
@@ -456,15 +456,15 @@
                                     </tr>
                                     <tr class="read">
                                         <td width="2%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox10" value="1" data-toggle="selectrow" data-target="tr">  
-                                                <label for="customcheckbox10"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox10" value="1" data-toggle="selectrow" data-target="tr">
+                                                <label for="customcheckbox10"></label>
                                             </div>
                                         </td>
                                         <td width="2%">
-                                            <span class="checkbox checkbox-icon icon-star">  
-                                                <input type="checkbox" id="checkboxicon10" value="1">  
-                                                <label for="checkboxicon10"></label>   
+                                            <span class="checkbox checkbox-icon icon-star">
+                                                <input type="checkbox" id="checkboxicon10" value="1">
+                                                <label for="checkboxicon10"></label>
                                             </span>
                                         </td>
                                         <td class="meta">
@@ -482,15 +482,15 @@
                                     </tr>
                                     <tr>
                                         <td width="2%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox11" value="1" data-toggle="selectrow" data-target="tr">  
-                                                <label for="customcheckbox11"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox11" value="1" data-toggle="selectrow" data-target="tr">
+                                                <label for="customcheckbox11"></label>
                                             </div>
                                         </td>
                                         <td width="2%">
-                                            <span class="checkbox checkbox-icon icon-star">  
-                                                <input type="checkbox" id="checkboxicon11" value="1" checked="">  
-                                                <label for="checkboxicon11"></label>   
+                                            <span class="checkbox checkbox-icon icon-star">
+                                                <input type="checkbox" id="checkboxicon11" value="1" checked="">
+                                                <label for="checkboxicon11"></label>
                                             </span>
                                         </td>
                                         <td class="meta">
@@ -507,15 +507,15 @@
                                     </tr>
                                     <tr>
                                         <td width="2%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox12" value="1" data-toggle="selectrow" data-target="tr">  
-                                                <label for="customcheckbox12"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox12" value="1" data-toggle="selectrow" data-target="tr">
+                                                <label for="customcheckbox12"></label>
                                             </div>
                                         </td>
                                         <td width="2%">
-                                            <span class="checkbox checkbox-icon icon-star">  
-                                                <input type="checkbox" id="checkboxicon12" value="1">  
-                                                <label for="checkboxicon12"></label>   
+                                            <span class="checkbox checkbox-icon icon-star">
+                                                <input type="checkbox" id="checkboxicon12" value="1">
+                                                <label for="checkboxicon12"></label>
                                             </span>
                                         </td>
                                         <td class="meta">
@@ -533,15 +533,15 @@
                                     </tr>
                                     <tr class="read">
                                         <td width="2%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox13" value="1" data-toggle="selectrow" data-target="tr">  
-                                                <label for="customcheckbox13"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox13" value="1" data-toggle="selectrow" data-target="tr">
+                                                <label for="customcheckbox13"></label>
                                             </div>
                                         </td>
                                         <td width="2%">
-                                            <span class="checkbox checkbox-icon icon-star">  
-                                                <input type="checkbox" id="checkboxicon7" value="1">  
-                                                <label for="checkboxicon13"></label>   
+                                            <span class="checkbox checkbox-icon icon-star">
+                                                <input type="checkbox" id="checkboxicon7" value="1">
+                                                <label for="checkboxicon13"></label>
                                             </span>
                                         </td>
                                         <td class="meta">
@@ -559,15 +559,15 @@
                                     </tr>
                                     <tr class="read">
                                         <td width="2%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox14" value="1" data-toggle="selectrow" data-target="tr">  
-                                                <label for="customcheckbox14"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox14" value="1" data-toggle="selectrow" data-target="tr">
+                                                <label for="customcheckbox14"></label>
                                             </div>
                                         </td>
                                         <td width="2%">
-                                            <span class="checkbox checkbox-icon icon-star">  
-                                                <input type="checkbox" id="checkboxicon14" value="1">  
-                                                <label for="checkboxicon14"></label>   
+                                            <span class="checkbox checkbox-icon icon-star">
+                                                <input type="checkbox" id="checkboxicon14" value="1">
+                                                <label for="checkboxicon14"></label>
                                             </span>
                                         </td>
                                         <td class="meta">
@@ -584,15 +584,15 @@
                                     </tr>
                                     <tr class="read">
                                         <td width="2%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox15" value="1" data-toggle="selectrow" data-target="tr">  
-                                                <label for="customcheckbox15"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox15" value="1" data-toggle="selectrow" data-target="tr">
+                                                <label for="customcheckbox15"></label>
                                             </div>
                                         </td>
                                         <td width="2%">
-                                            <span class="checkbox checkbox-icon icon-star">  
-                                                <input type="checkbox" id="checkboxicon15" value="1">  
-                                                <label for="checkboxicon15"></label>   
+                                            <span class="checkbox checkbox-icon icon-star">
+                                                <input type="checkbox" id="checkboxicon15" value="1">
+                                                <label for="checkboxicon15"></label>
                                             </span>
                                         </td>
                                         <td class="meta">
@@ -610,15 +610,15 @@
                                     </tr>
                                     <tr>
                                         <td width="2%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox16" value="1" data-toggle="selectrow" data-target="tr">  
-                                                <label for="customcheckbox16"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox16" value="1" data-toggle="selectrow" data-target="tr">
+                                                <label for="customcheckbox16"></label>
                                             </div>
                                         </td>
                                         <td width="2%">
-                                            <span class="checkbox checkbox-icon icon-star">  
-                                                <input type="checkbox" id="checkboxicon16" value="1" checked="">  
-                                                <label for="checkboxicon16"></label>   
+                                            <span class="checkbox checkbox-icon icon-star">
+                                                <input type="checkbox" id="checkboxicon16" value="1" checked="">
+                                                <label for="checkboxicon16"></label>
                                             </span>
                                         </td>
                                         <td class="meta">
@@ -634,15 +634,15 @@
                                     </tr>
                                     <tr>
                                         <td width="2%">
-                                            <div class="checkbox custom-checkbox nm">  
-                                                <input type="checkbox" id="customcheckbox17" value="1" data-toggle="selectrow" data-target="tr">  
-                                                <label for="customcheckbox17"></label>   
+                                            <div class="checkbox custom-checkbox nm">
+                                                <input type="checkbox" id="customcheckbox17" value="1" data-toggle="selectrow" data-target="tr">
+                                                <label for="customcheckbox17"></label>
                                             </div>
                                         </td>
                                         <td width="2%">
-                                            <span class="checkbox checkbox-icon icon-star">  
-                                                <input type="checkbox" id="checkboxicon17" value="1">  
-                                                <label for="checkboxicon17"></label>   
+                                            <span class="checkbox checkbox-icon icon-star">
+                                                <input type="checkbox" id="checkboxicon17" value="1">
+                                                <label for="checkboxicon17"></label>
                                             </span>
                                         </td>
                                         <td class="meta">

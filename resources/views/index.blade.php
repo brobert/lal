@@ -3,8 +3,8 @@
     <!-- START Head -->
     <head>
         <!-- START META SECTION -->
-		@include('partials.head_meta')
-		<!--/ END META SECTION -->
+        @include('partials.head_meta')
+        <!--/ END META SECTION -->
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
@@ -32,12 +32,14 @@
     <!-- START Body -->
     <body>
         <!-- START Template Header -->
-		@include('partials.template_header')
-		<!--/ END Template Header -->
+        @include('partials.template_header')
+        <!--/ END Template Header -->
 
         @include('partials.left_aside')
 
         @include('partials.right_aside')
+
+        @include('partials.page_footer')
 
         <!-- START Template Main -->
         <section id="main" role="main">
@@ -175,8 +177,8 @@
                     <div class="col-md-3">
                         <div class="panel panel-minimal">
                             @include('dashboard.income', ['data' => $income])
-                            @include('dashboard.weather')
-                            @include('dashboard.traffic')
+                            @include('dashboard.weather', ['data' => $weather])
+                            @include('dashboard.traffic', ['data' => $traffic])
                         </div>
                     </div>
                     <!--/ END Right Side -->

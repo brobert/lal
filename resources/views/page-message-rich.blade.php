@@ -3,8 +3,8 @@
     <!-- START Head -->
     <head>
         <!-- START META SECTION -->
-		@include('partials.head_meta')
-		<!--/ END META SECTION -->
+        @include('partials.head_meta')
+        <!--/ END META SECTION -->
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
@@ -33,11 +33,11 @@
     <!-- START Body -->
     <body>
         <!-- START Template Header -->
-		@include('partials.template_header')
-		<!--/ END Template Header -->
+        @include('partials.template_header')
+        <!--/ END Template Header -->
 
         @include('partials.left_aside')
-        
+
         @include('partials.right_aside')
 
         <!-- START Template Main -->
@@ -88,7 +88,7 @@
                         <!--/ panel heading -->
 
                         <hr class="mt10 mb10"><!-- horizontal line -->
-                        
+
                         <!-- panel body -->
                         <div class="panel-body np">
                             <!-- message list -->
@@ -249,7 +249,7 @@
                                 </li>
                                 <li class="text-left">
                                     <h4 class="semibold ellipsis nm">
-                                        Arthur Abbott / 
+                                        Arthur Abbott /
                                         <small class="text-muted"><a href="javascript:void(0);">arbb@mail.com</a> to <a href="javascript:void(0);">Me</a></small>
                                     </h4>
                                 </li>

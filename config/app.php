@@ -1,17 +1,16 @@
 <?php
-
 return [
 
     /*
-    |--------------------------------------------------------------------------
-    | Application Name
-    |--------------------------------------------------------------------------
-    |
-    | This value is the name of your application. This value is used when the
-    | framework needs to place the application's name in a notification or
-    | any other location as required by the application or its packages.
-    |
-    */
+     * |--------------------------------------------------------------------------
+     * | Application Name
+     * |--------------------------------------------------------------------------
+     * |
+     * | This value is the name of your application. This value is used when the
+     * | framework needs to place the application's name in a notification or
+     * | any other location as required by the application or its packages.
+     * |
+     */
 
     'name' => env('APP_NAME', 'LanderV2'),
 
@@ -94,6 +93,18 @@ return [
     'fallback_locale' => 'en',
 
     /*
+     |--------------------------------------------------------------------------
+     | Application Faker Configuration
+     |--------------------------------------------------------------------------
+     |
+     | The application faker locale determines the default locale that will be used
+     | by the database factories. You are free to set this value
+     | to any of the locales which will be supported by the application.
+     |
+     */
+    'faker_locale' => 'pl_PL',
+
+    /*
     |--------------------------------------------------------------------------
     | Encryption Key
     |--------------------------------------------------------------------------
@@ -159,7 +170,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-    	App\Providers\BladeServiceProvider::class,
+        App\Providers\BladeServiceProvider::class
 
     ],
 
@@ -208,8 +219,8 @@ return [
         'Storage' => Illuminate\Support\Facades\Storage::class,
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
-        'View' => Illuminate\Support\Facades\View::class,
+        'View' => Illuminate\Support\Facades\View::class
 
-    ],
+    ]
 
 ];

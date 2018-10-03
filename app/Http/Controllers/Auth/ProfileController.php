@@ -8,25 +8,40 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\TimeZone as TimeZoneModel;
 use App\Models\Country as CountryModel;
+use App\Models\Language as LanguageModel;
 use Log;
 
 
-class ProfileController extends Controller
-{
+class ProfileController extends Controller {
 
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
+    public function index() {
+
         $data = [];
 
         $data ['timeZones'] = TimeZoneModel::orderBy('name', 'ASC')->get();
         $data ['countries'] = CountryModel::orderBy('name', 'ASC')->get();
-        $data['user'] = Auth::user();
-        return view('page-profile', $data);
+        $data ['languages'] = LanguageModel::orderBy('name', 'ASC')->get();
+        $data ['user'] = Auth::user();
+        $data ['tabs'] = [
+            [
+                'id' => 'profile',
+                'icon' => 'ico-user2'
+            ],
+            [
+                'id' => 'account',
+                'icon' => 'ico-archive2'
+            ],
+            [
+                'id' => 'password',
+                'icon' => 'ico-key2'
+            ]
+        ];
+        return view('profile.form', $data);
     }
 
     /**
@@ -34,8 +49,7 @@ class ProfileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
+    public function create() {
 
         //
     }
@@ -46,21 +60,21 @@ class ProfileController extends Controller
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
+    public function store(Request $request) {
+
         $validationRules = $this->getValidationRules($request);
         $data = $request->only(array_keys($validationRules));
 
         $validator = Validator::make($data, $validationRules);
 
-        Log::debug($validationRules);
-        Log::debug(array_keys($validationRules));
-        Log::debug($data);
-        Log::debug($validator->fails() ? 'ERROR' : 'OK');
+        // Log::debug($validationRules);
+        // Log::debug($request->get('scope', '__________________'));
+        // Log::debug(array_keys($validationRules));
+        // Log::debug($data);
+        // Log::debug($validator->fails() ? 'ERROR' : 'OK');
 
         if ($validator->fails()) {
-            return redirect()->route('page-profile.index')->withErrors($validator)
-                ->withInput();
+            return redirect()->route('profile.index')->withErrors($validator)->withInput();
         } else {
             $user = Auth::user();
             foreach ( $data as $key => $value ) {
@@ -68,7 +82,7 @@ class ProfileController extends Controller
             }
             $user->save();
         }
-        return redirect()->route('page-profile.index');
+        return redirect()->route('profile.index')->withInput();
     }
 
     /**
@@ -77,9 +91,9 @@ class ProfileController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        return view('page-profile');
+    public function show($id) {
+
+        return view('profile');
     }
 
     /**
@@ -88,8 +102,7 @@ class ProfileController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
+    public function edit($id) {
 
         //
     }
@@ -101,8 +114,7 @@ class ProfileController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
+    public function update(Request $request, $id) {
 
         //
     }
@@ -113,8 +125,7 @@ class ProfileController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
+    public function destroy($id) {
 
         //
     }
@@ -122,15 +133,20 @@ class ProfileController extends Controller
     private $validationRules = [
         'profile' => [
             'name' => 'required|string|min:3|max:190',
-            'location' => 'nullable|string|alpha|max:50',
+            'email' => 'required|email'
+        ],
+        'account' => [
+            'language_id' => 'required',
+            'country_id' => 'required',
+            'timezone_id' => 'required',
+            'city' => 'required|string|max:50',
             'website' => 'nullable|url|max:100',
             'bio' => 'nullable|string|max:160'
-
         ]
     ];
 
-    private function getValidationRules(Request $request)
-    {
+    private function getValidationRules(Request $request) {
+
         return $this->validationRules [$request->get('scope', 'profile')];
     }
 }

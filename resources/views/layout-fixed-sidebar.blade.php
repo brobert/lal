@@ -3,8 +3,8 @@
     <!-- START Head -->
     <head>
         <!-- START META SECTION -->
-		@include('partials.head_meta')
-		<!--/ END META SECTION -->
+        @include('partials.head_meta')
+        <!--/ END META SECTION -->
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
@@ -34,11 +34,11 @@
     <!-- START Body -->
     <body>
         <!-- START Template Header -->
-		@include('partials.template_header')
-		<!--/ END Template Header -->
+        @include('partials.template_header')
+        <!--/ END Template Header -->
 
         @include('partials.left_aside')
-        
+
         @include('partials.right_aside')
 
         <!-- START Template Footer -->
@@ -84,7 +84,7 @@
                 </div>
                 <!-- Page Header -->
 
-                
+
             </div>
             <!--/ END Template Container -->
 

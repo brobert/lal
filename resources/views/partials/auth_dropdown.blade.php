@@ -15,8 +15,8 @@
         </span>
     </a>
     <ul class="dropdown-menu" role="menu">
-        <li><a href="{{route('page-profile.index')}}"><span class="icon"><i class="ico-user-plus2"></i></span> My Accounts</a></li>
-        <li><a href="/page-faq"><span class="icon"><i class="ico-question"></i></span> Help</a></li>
+        <li><a href="{{route('profile.index')}}"><span class="icon"><i class="ico-user-plus2"></i></span> My Accounts</a></li>
+        <li><a href="{{route('page.faq')}}"><span class="icon"><i class="ico-question"></i></span> Help</a></li>
         <li class="divider"></li>
         <li>
             <a href="{{ route('logout') }}"

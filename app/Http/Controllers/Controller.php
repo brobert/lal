@@ -12,5 +12,5 @@ use App\Traits\ResponseTrait;
 
 class Controller extends BaseController
 {
-	use AuthorizesRequests, DispatchesJobs, ValidatesRequests, ResponseTrait;
+    use AuthorizesRequests, DispatchesJobs, ValidatesRequests, ResponseTrait;
 }

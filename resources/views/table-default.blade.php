@@ -3,8 +3,8 @@
     <!-- START Head -->
     <head>
         <!-- START META SECTION -->
-		@include('partials.head_meta')
-		<!--/ END META SECTION -->
+        @include('partials.head_meta')
+        <!--/ END META SECTION -->
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
@@ -30,11 +30,11 @@
     <!-- START Body -->
     <body>
         <!-- START Template Header -->
-		@include('partials.template_header')
-		<!--/ END Template Header -->
+        @include('partials.template_header')
+        <!--/ END Template Header -->
 
         @include('partials.left_aside')
-        
+
         @include('partials.right_aside')
 
         <!-- START Template Main -->
@@ -82,9 +82,9 @@
                             <!-- panel toolbar wrapper -->
                             <div class="panel-toolbar-wrapper pl0 pt5 pb5">
                                 <div class="panel-toolbar pl10">
-                                    <div class="checkbox custom-checkbox pull-left">  
-                                        <input type="checkbox" id="customcheckbox-one0" value="1" data-toggle="checkall" data-target="#table1">  
-                                        <label for="customcheckbox-one0">&nbsp;&nbsp;Select all</label>  
+                                    <div class="checkbox custom-checkbox pull-left">
+                                        <input type="checkbox" id="customcheckbox-one0" value="1" data-toggle="checkall" data-target="#table1">
+                                        <label for="customcheckbox-one0">&nbsp;&nbsp;Select all</label>
                                     </div>
                                 </div>
                                 <div class="panel-toolbar text-right">
@@ -116,9 +116,9 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div class="checkbox custom-checkbox nm">  
-                                                    <input type="checkbox" id="customcheckbox-one1" value="1" data-toggle="selectrow" data-target="tr" data-contextual="success" checked>  
-                                                    <label for="customcheckbox-one1"></label>   
+                                                <div class="checkbox custom-checkbox nm">
+                                                    <input type="checkbox" id="customcheckbox-one1" value="1" data-toggle="selectrow" data-target="tr" data-contextual="success" checked>
+                                                    <label for="customcheckbox-one1"></label>
                                                 </div>
                                             </td>
                                             <td><div class="media-object"><img src="/image/avatar/avatar.png" alt="" class="img-circle"></div>
@@ -153,9 +153,9 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="checkbox custom-checkbox nm">  
-                                                    <input type="checkbox" id="customcheckbox-one2" value="1" data-toggle="selectrow" data-target="tr" data-contextual="warning">  
-                                                    <label for="customcheckbox-one2"></label>   
+                                                <div class="checkbox custom-checkbox nm">
+                                                    <input type="checkbox" id="customcheckbox-one2" value="1" data-toggle="selectrow" data-target="tr" data-contextual="warning">
+                                                    <label for="customcheckbox-one2"></label>
                                                 </div>
                                             </td>
                                             <td><div class="media-object"><img src="/image/avatar/avatar1.jpg" alt="" class="img-circle"></div></td>
@@ -189,9 +189,9 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="checkbox custom-checkbox nm">  
-                                                    <input type="checkbox" id="customcheckbox-one3" value="1" data-toggle="selectrow" data-target="tr" data-contextual="danger">  
-                                                    <label for="customcheckbox-one3"></label>   
+                                                <div class="checkbox custom-checkbox nm">
+                                                    <input type="checkbox" id="customcheckbox-one3" value="1" data-toggle="selectrow" data-target="tr" data-contextual="danger">
+                                                    <label for="customcheckbox-one3"></label>
                                                 </div>
                                             </td>
                                             <td><div class="media-object"><img src="/image/avatar/avatar2.jpg" alt="" class="img-circle"></div></td>
@@ -225,9 +225,9 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="checkbox custom-checkbox nm">  
-                                                    <input type="checkbox" id="customcheckbox-one4" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">  
-                                                    <label for="customcheckbox-one4"></label>   
+                                                <div class="checkbox custom-checkbox nm">
+                                                    <input type="checkbox" id="customcheckbox-one4" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">
+                                                    <label for="customcheckbox-one4"></label>
                                                 </div>
                                             </td>
                                             <td><div class="media-object"><img src="/image/avatar/avatar3.jpg" alt="" class="img-circle"></div></td>
@@ -261,9 +261,9 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="checkbox custom-checkbox nm">  
-                                                    <input type="checkbox" id="customcheckbox-one5" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">  
-                                                    <label for="customcheckbox-one5"></label>   
+                                                <div class="checkbox custom-checkbox nm">
+                                                    <input type="checkbox" id="customcheckbox-one5" value="1" data-toggle="selectrow" data-target="tr" data-contextual="stroke">
+                                                    <label for="customcheckbox-one5"></label>
                                                 </div>
                                             </td>
                                             <td><div class="media-object"><img src="/image/avatar/avatar4.jpg" alt="" class="img-circle"></div></td>
@@ -297,9 +297,9 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="checkbox custom-checkbox nm">  
-                                                    <input type="checkbox" id="customcheckbox-one6" value="1" data-toggle="selectrow" data-target="tr">  
-                                                    <label for="customcheckbox-one6"></label>   
+                                                <div class="checkbox custom-checkbox nm">
+                                                    <input type="checkbox" id="customcheckbox-one6" value="1" data-toggle="selectrow" data-target="tr">
+                                                    <label for="customcheckbox-one6"></label>
                                                 </div>
                                             </td>
                                             <td><div class="media-object"><img src="/image/avatar/avatar5.jpg" alt="" class="img-circle"></div></td>
@@ -333,9 +333,9 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="checkbox custom-checkbox nm">  
-                                                    <input type="checkbox" id="customcheckbox-one7" value="1" data-toggle="selectrow" data-target="tr">  
-                                                    <label for="customcheckbox-one7"></label>   
+                                                <div class="checkbox custom-checkbox nm">
+                                                    <input type="checkbox" id="customcheckbox-one7" value="1" data-toggle="selectrow" data-target="tr">
+                                                    <label for="customcheckbox-one7"></label>
                                                 </div>
                                             </td>
                                             <td><div class="media-object"><img src="/image/avatar/avatar6.jpg" alt="" class="img-circle"></div></td>
@@ -369,9 +369,9 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="checkbox custom-checkbox nm">  
-                                                    <input type="checkbox" id="customcheckbox-one8" value="1" data-toggle="selectrow" data-target="tr">  
-                                                    <label for="customcheckbox-one8"></label>   
+                                                <div class="checkbox custom-checkbox nm">
+                                                    <input type="checkbox" id="customcheckbox-one8" value="1" data-toggle="selectrow" data-target="tr">
+                                                    <label for="customcheckbox-one8"></label>
                                                 </div>
                                             </td>
                                             <td><div class="media-object"><img src="/image/avatar/avatar7.jpg" alt="" class="img-circle"></div></td>
@@ -405,9 +405,9 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="checkbox custom-checkbox nm">  
-                                                    <input type="checkbox" id="customcheckbox-one9" value="1" data-toggle="selectrow" data-target="tr">  
-                                                    <label for="customcheckbox-one9"></label>   
+                                                <div class="checkbox custom-checkbox nm">
+                                                    <input type="checkbox" id="customcheckbox-one9" value="1" data-toggle="selectrow" data-target="tr">
+                                                    <label for="customcheckbox-one9"></label>
                                                 </div>
                                             </td>
                                             <td><div class="media-object"><img src="/image/avatar/avatar1.jpg" alt="" class="img-circle"></div></td>
@@ -441,9 +441,9 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="checkbox custom-checkbox nm">  
-                                                    <input type="checkbox" id="customcheckbox-one10" value="1" data-toggle="selectrow" data-target="tr">  
-                                                    <label for="customcheckbox-one10"></label>   
+                                                <div class="checkbox custom-checkbox nm">
+                                                    <input type="checkbox" id="customcheckbox-one10" value="1" data-toggle="selectrow" data-target="tr">
+                                                    <label for="customcheckbox-one10"></label>
                                                 </div>
                                             </td>
                                             <td><div class="media-object"><img src="/image/avatar/avatar2.jpg" alt="" class="img-circle"></div></td>
@@ -536,9 +536,9 @@
                                     <thead>
                                         <tr>
                                             <th width="3%" class="text-center">
-                                                <div class="checkbox custom-checkbox pull-left" data-toggle="tooltip" data-placement="right" title="Check all">  
-                                                    <input type="checkbox" id="customcheckbox-two0" value="1" data-toggle="checkall" data-target="#toolbar-showcase">  
-                                                    <label for="customcheckbox-two0"></label>  
+                                                <div class="checkbox custom-checkbox pull-left" data-toggle="tooltip" data-placement="right" title="Check all">
+                                                    <input type="checkbox" id="customcheckbox-two0" value="1" data-toggle="checkall" data-target="#toolbar-showcase">
+                                                    <label for="customcheckbox-two0"></label>
                                                 </div>
                                             </th>
                                             <th width="5%"></th>
@@ -552,9 +552,9 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div class="checkbox custom-checkbox nm">  
-                                                    <input type="checkbox" id="customcheckbox-two1" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">  
-                                                    <label for="customcheckbox-two1"></label>   
+                                                <div class="checkbox custom-checkbox nm">
+                                                    <input type="checkbox" id="customcheckbox-two1" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">
+                                                    <label for="customcheckbox-two1"></label>
                                                 </div>
                                             </td>
                                             <td><div class="media-object"><img src="/image/avatar/avatar.png" alt="" class="img-circle"></div>
@@ -571,9 +571,9 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="checkbox custom-checkbox nm">  
-                                                    <input type="checkbox" id="customcheckbox-two2" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">  
-                                                    <label for="customcheckbox-two2"></label>   
+                                                <div class="checkbox custom-checkbox nm">
+                                                    <input type="checkbox" id="customcheckbox-two2" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">
+                                                    <label for="customcheckbox-two2"></label>
                                                 </div>
                                             </td>
                                             <td><div class="media-object"><img src="/image/avatar/avatar1.jpg" alt="" class="img-circle"></div></td>
@@ -589,9 +589,9 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="checkbox custom-checkbox nm">  
-                                                    <input type="checkbox" id="customcheckbox-two3" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">  
-                                                    <label for="customcheckbox-two3"></label>   
+                                                <div class="checkbox custom-checkbox nm">
+                                                    <input type="checkbox" id="customcheckbox-two3" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">
+                                                    <label for="customcheckbox-two3"></label>
                                                 </div>
                                             </td>
                                             <td><div class="media-object"><img src="/image/avatar/avatar2.jpg" alt="" class="img-circle"></div></td>
@@ -607,9 +607,9 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="checkbox custom-checkbox nm">  
-                                                    <input type="checkbox" id="customcheckbox-two4" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">  
-                                                    <label for="customcheckbox-two4"></label>   
+                                                <div class="checkbox custom-checkbox nm">
+                                                    <input type="checkbox" id="customcheckbox-two4" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">
+                                                    <label for="customcheckbox-two4"></label>
                                                 </div>
                                             </td>
                                             <td><div class="media-object"><img src="/image/avatar/avatar3.jpg" alt="" class="img-circle"></div></td>
@@ -625,9 +625,9 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="checkbox custom-checkbox nm">  
-                                                    <input type="checkbox" id="customcheckbox-two5" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">  
-                                                    <label for="customcheckbox-two5"></label>   
+                                                <div class="checkbox custom-checkbox nm">
+                                                    <input type="checkbox" id="customcheckbox-two5" value="1" data-toggle="selectrow" data-target="tr" data-contextual="info">
+                                                    <label for="customcheckbox-two5"></label>
                                                 </div>
                                             </td>
                                             <td><div class="media-object"><img src="/image/avatar/avatar4.jpg" alt="" class="img-circle"></div></td>

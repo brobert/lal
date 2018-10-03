@@ -1,44 +1,6 @@
-<!DOCTYPE html>
-<html class="backend">
-    <!-- START Head -->
-    <head>
-        <!-- START META SECTION -->
-        @include('partials.head_meta')
-        <!--/ END META SECTION -->
+@extends('layouts.app')
 
-        <!-- START STYLESHEETS -->
-        <!-- Plugins stylesheet : optional -->
-        <!--/ Plugins stylesheet : optional -->
-
-        <!-- Application stylesheet : mandatory -->
-        <link rel="stylesheet" href="/css/bootstrap.css">
-        <link rel="stylesheet" href="/css/layout.css">
-        <link rel="stylesheet" href="/css/uielement.css">
-        <!--/ Application stylesheet -->
-
-        <!-- Theme stylesheet -->
-        <link rel="stylesheet" href="/css/themes/theme.css">
-        <!--/ Theme stylesheet -->
-
-        <!-- modernizr script -->
-        <script type="text/javascript" src="/plugins/modernizr/js/modernizr.js"></script>
-        <!--/ modernizr script -->
-        <!-- END STYLESHEETS -->
-    </head>
-    <!--/ END Head -->
-
-    <!-- START Body -->
-    <body>
-        <!-- START Template Header -->
-        @include('partials.template_header')
-        <!--/ END Template Header -->
-
-        @include('partials.left_aside')
-
-        @include('partials.right_aside')
-
-        <!-- START Template Main -->
-        <section id="main" role="main">
+@section('content')
             <!-- START Template Container -->
             <div class="container-fluid">
                 <!-- Page Header -->
@@ -216,6 +178,7 @@
                 <!--/ END row -->
             </div>
             <!--/ END Template Container -->
+@endsection
 
             <!-- START To Top Scroller -->
             <a href="#" class="totop animation" data-toggle="waypoints totop" data-showanim="bounceIn" data-hideanim="bounceOut" data-offset="50%"><i class="ico-angle-up"></i></a>
@@ -231,9 +194,6 @@
         <!--/ Application and vendor script : mandatory -->
 
         <!-- Plugins and page level script : optional -->
+@section('content')
         <script type="text/javascript" src="/js/pace.min.js"></script>
-        <!--/ Plugins and page level script : optional -->
-        <!--/ END JAVASCRIPT SECTION -->
-    </body>
-    <!--/ END Body -->
-</html>
+@endsection

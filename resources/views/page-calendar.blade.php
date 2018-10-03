@@ -3,8 +3,8 @@
     <!-- START Head -->
     <head>
         <!-- START META SECTION -->
-		@include('partials.head_meta')
-		<!--/ END META SECTION -->
+        @include('partials.head_meta')
+        <!--/ END META SECTION -->
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
@@ -32,11 +32,11 @@
     <!-- START Body -->
     <body>
         <!-- START Template Header -->
-		@include('partials.template_header')
-		<!--/ END Template Header -->
+        @include('partials.template_header')
+        <!--/ END Template Header -->
 
         @include('partials.left_aside')
-        
+
         @include('partials.right_aside')
 
         <!-- START Template Main -->
@@ -129,33 +129,33 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-sm-12">
-                                                    <span class="radio-inline custom-radio custom-radio-primary">  
-                                                        <input type="radio" name="eventcolor" id="color1" value="primary" checked data-parsley-group="event-color">  
-                                                        <label for="color1" class="pl10"></label>   
+                                                    <span class="radio-inline custom-radio custom-radio-primary">
+                                                        <input type="radio" name="eventcolor" id="color1" value="primary" checked data-parsley-group="event-color">
+                                                        <label for="color1" class="pl10"></label>
                                                     </span>
-                                                    <span class="radio-inline custom-radio custom-radio-info">  
-                                                        <input type="radio" name="eventcolor" id="color2" value="info" data-parsley-group="event-color">  
-                                                        <label for="color2" class="pl10"></label>   
+                                                    <span class="radio-inline custom-radio custom-radio-info">
+                                                        <input type="radio" name="eventcolor" id="color2" value="info" data-parsley-group="event-color">
+                                                        <label for="color2" class="pl10"></label>
                                                     </span>
-                                                    <span class="radio-inline custom-radio custom-radio-success">  
-                                                        <input type="radio" name="eventcolor" id="color3" value="success" data-parsley-group="event-color">  
-                                                        <label for="color3" class="pl10"></label>   
+                                                    <span class="radio-inline custom-radio custom-radio-success">
+                                                        <input type="radio" name="eventcolor" id="color3" value="success" data-parsley-group="event-color">
+                                                        <label for="color3" class="pl10"></label>
                                                     </span>
-                                                    <span class="radio-inline custom-radio custom-radio-warning">  
-                                                        <input type="radio" name="eventcolor" id="color4" value="warning" data-parsley-group="event-color">  
-                                                        <label for="color4" class="pl10"></label>   
+                                                    <span class="radio-inline custom-radio custom-radio-warning">
+                                                        <input type="radio" name="eventcolor" id="color4" value="warning" data-parsley-group="event-color">
+                                                        <label for="color4" class="pl10"></label>
                                                     </span>
-                                                    <span class="radio-inline custom-radio custom-radio-danger">  
-                                                        <input type="radio" name="eventcolor" id="color5" value="danger" data-parsley-group="event-color">  
-                                                        <label for="color5" class="pl10"></label>   
+                                                    <span class="radio-inline custom-radio custom-radio-danger">
+                                                        <input type="radio" name="eventcolor" id="color5" value="danger" data-parsley-group="event-color">
+                                                        <label for="color5" class="pl10"></label>
                                                     </span>
-                                                    <span class="radio-inline custom-radio custom-radio-teal">  
-                                                        <input type="radio" name="eventcolor" id="color6" value="teal" data-parsley-group="event-color">  
-                                                        <label for="color6" class="pl10"></label>   
+                                                    <span class="radio-inline custom-radio custom-radio-teal">
+                                                        <input type="radio" name="eventcolor" id="color6" value="teal" data-parsley-group="event-color">
+                                                        <label for="color6" class="pl10"></label>
                                                     </span>
-                                                    <span class="radio-inline custom-radio custom-radio-inverse">  
-                                                        <input type="radio" name="eventcolor" id="color7" value="inverse" data-parsley-group="event-color">  
-                                                        <label for="color7" class="pl10"></label>   
+                                                    <span class="radio-inline custom-radio custom-radio-inverse">
+                                                        <input type="radio" name="eventcolor" id="color7" value="inverse" data-parsley-group="event-color">
+                                                        <label for="color7" class="pl10"></label>
                                                     </span>
                                                 </div>
                                             </div>

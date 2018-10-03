@@ -5,8 +5,8 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
-{
+
+class User extends Authenticatable {
     use Notifiable;
 
     /**
@@ -19,12 +19,12 @@ class User extends Authenticatable
         'email',
         'password',
         'photo',
-        'country',
-        'location',
+        'country_id',
+        'city',
+        'language_id',
+        'timezone_id',
         'website',
-        'bio',
-        'language',
-        'tz'
+        'bio'
     ];
 
     /**

@@ -3,8 +3,8 @@
     <!-- START Head -->
     <head>
         <!-- START META SECTION -->
-		@include('partials.head_meta')
-		<!--/ END META SECTION -->
+        @include('partials.head_meta')
+        <!--/ END META SECTION -->
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
@@ -35,11 +35,11 @@
     <!-- START Body -->
     <body>
         <!-- START Template Header -->
-		@include('partials.template_header')
-		<!--/ END Template Header -->
+        @include('partials.template_header')
+        <!--/ END Template Header -->
 
         @include('partials.left_aside')
-        
+
         @include('partials.right_aside')
 
         <!-- START Template Main -->
@@ -85,13 +85,13 @@
                             <!-- panel toolbar -->
                             <div class="panel-toolbar">
                                 <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#ModalComposeMessage">
-                                    <i class="ico-pencil5"></i> 
+                                    <i class="ico-pencil5"></i>
                                     <span class="semibold">Compose Email</span>
                                 </button>
                             </div>
                         </div>
                         <!--/ panel heading -->
-                        
+
                         <!-- panel body -->
                         <div class="panel-body">
                             <!-- Browse -->
@@ -246,7 +246,7 @@
                                 </li>
                                 <li class="text-left">
                                     <h4 class="semibold ellipsis nm">
-                                        Colt Jenkins / 
+                                        Colt Jenkins /
                                         <small class="text-muted"><a href="javascript:void(0);">cj@mail.com</a> to <a href="javascript:void(0);">Me</a></small>
                                     </h4>
                                 </li>

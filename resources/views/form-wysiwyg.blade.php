@@ -3,8 +3,8 @@
     <!-- START Head -->
     <head>
         <!-- START META SECTION -->
-		@include('partials.head_meta')
-		<!--/ END META SECTION -->
+        @include('partials.head_meta')
+        <!--/ END META SECTION -->
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
@@ -32,11 +32,11 @@
     <!-- START Body -->
     <body>
         <!-- START Template Header -->
-		@include('partials.template_header')
-		<!--/ END Template Header -->
+        @include('partials.template_header')
+        <!--/ END Template Header -->
 
         @include('partials.left_aside')
-        
+
         @include('partials.right_aside')
 
         <!-- START Template Main -->
@@ -91,9 +91,9 @@
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-sm-9">
-                                            <span class="checkbox custom-checkbox">  
-                                                <input type="checkbox" id="customcheckbox1" value="1">  
-                                                <label for="customcheckbox1">&nbsp;&nbsp;Publish on save?</label>   
+                                            <span class="checkbox custom-checkbox">
+                                                <input type="checkbox" id="customcheckbox1" value="1">
+                                                <label for="customcheckbox1">&nbsp;&nbsp;Publish on save?</label>
                                             </span>
                                         </div>
                                     </div>

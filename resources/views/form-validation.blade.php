@@ -3,8 +3,8 @@
     <!-- START Head -->
     <head>
         <!-- START META SECTION -->
-		@include('partials.head_meta')
-		<!--/ END META SECTION -->
+        @include('partials.head_meta')
+        <!--/ END META SECTION -->
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
@@ -31,11 +31,11 @@
     <!-- START Body -->
     <body>
         <!-- START Template Header -->
-		@include('partials.template_header')
-		<!--/ END Template Header -->
+        @include('partials.template_header')
+        <!--/ END Template Header -->
 
         @include('partials.left_aside')
-        
+
         @include('partials.right_aside')
 
         <!-- START Template Main -->
@@ -66,7 +66,7 @@
                         <form class="panel panel-default" action="" data-parsley-validate>
                             <div class="panel-heading">
                                 <h3 class="panel-title"><i class="ico-tshirt mr5"></i> T-shirt order sample</h3>
-                            </div>               
+                            </div>
                             <div class="panel-body">
                                 <div class="form-group">
                                     <div class="row">
@@ -143,9 +143,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <div class="checkbox custom-checkbox">  
-                                        <input type="checkbox" name="gift" id="giftcheckbox" value="1" data-parsley-mincheck="1" required>  
-                                        <label for="giftcheckbox">&nbsp;&nbsp;Send as a gift</label>   
+                                    <div class="checkbox custom-checkbox">
+                                        <input type="checkbox" name="gift" id="giftcheckbox" value="1" data-parsley-mincheck="1" required>
+                                        <label for="giftcheckbox">&nbsp;&nbsp;Send as a gift</label>
                                     </div>
                                 </div>
                             </div>
@@ -160,7 +160,7 @@
                         <form class="panel panel-default" action="" data-parsley-validate>
                             <div class="panel-heading">
                                 <h3 class="panel-title"><i class="ico-coin mr5"></i> Donation form sample</h3>
-                            </div>               
+                            </div>
                             <div class="panel-body">
                                 <div class="form-group">
                                     <div class="row">
@@ -211,17 +211,17 @@
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <div class="checkbox custom-checkbox">  
-                                                <input type="checkbox" name="checkbox1" id="checkbox1" value="1">  
-                                                <label for="checkbox1">&nbsp;&nbsp;Make my donation anonymously.</label>   
+                                            <div class="checkbox custom-checkbox">
+                                                <input type="checkbox" name="checkbox1" id="checkbox1" value="1">
+                                                <label for="checkbox1">&nbsp;&nbsp;Make my donation anonymously.</label>
                                             </div>
-                                            <div class="checkbox custom-checkbox pt10">  
-                                                <input type="checkbox" name="checkbox2" id="checkbox2" value="2">  
-                                                <label for="checkbox2">&nbsp;&nbsp;Sign me up for newsletter.</label>   
+                                            <div class="checkbox custom-checkbox pt10">
+                                                <input type="checkbox" name="checkbox2" id="checkbox2" value="2">
+                                                <label for="checkbox2">&nbsp;&nbsp;Sign me up for newsletter.</label>
                                             </div>
-                                            <div class="checkbox custom-checkbox pt10">  
-                                                <input type="checkbox" name="checkbox3" id="checkbox3" value="3">  
-                                                <label for="checkbox3">&nbsp;&nbsp;I wish to help with the fundraising.</label>   
+                                            <div class="checkbox custom-checkbox pt10">
+                                                <input type="checkbox" name="checkbox3" id="checkbox3" value="3">
+                                                <label for="checkbox3">&nbsp;&nbsp;I wish to help with the fundraising.</label>
                                             </div>
                                         </div>
                                     </div>
@@ -250,7 +250,7 @@
                         <form class="panel panel-color-top panel-default form-horizontal form-bordered" action="" data-parsley-validate>
                             <div class="panel-heading">
                                 <h3 class="panel-title">Validator List</h3>
-                            </div>               
+                            </div>
                             <div class="panel-body">
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Required</label>

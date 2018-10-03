@@ -3,8 +3,8 @@
     <!-- START Head -->
     <head>
         <!-- START META SECTION -->
-		@include('partials.head_meta')
-		<!--/ END META SECTION -->
+        @include('partials.head_meta')
+        <!--/ END META SECTION -->
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
@@ -34,11 +34,11 @@
     <!-- START Body -->
     <body>
         <!-- START Template Header -->
-		@include('partials.template_header')
-		<!--/ END Template Header -->
+        @include('partials.template_header')
+        <!--/ END Template Header -->
 
         @include('partials.left_aside')
-        
+
         @include('partials.right_aside')
 
         <!-- START Template Main -->
@@ -190,13 +190,13 @@
                                     <div class="form-group">
                                         <label class="col-sm-3 control-label">Custom radio</label>
                                         <div class="col-sm-9">
-                                            <span class="radio custom-radio custom-radio-primary">  
-                                                <input type="radio" id="customradio1" value="option1">  
-                                                <label for="customradio1">&nbsp;&nbsp;Radio 1</label>   
+                                            <span class="radio custom-radio custom-radio-primary">
+                                                <input type="radio" id="customradio1" value="option1">
+                                                <label for="customradio1">&nbsp;&nbsp;Radio 1</label>
                                             </span>
-                                            <span class="radio custom-radio custom-radio-teal">  
-                                                <input type="radio" id="customradio2" value="option2">  
-                                                <label for="customradio2">&nbsp;&nbsp;Radio 2</label>   
+                                            <span class="radio custom-radio custom-radio-teal">
+                                                <input type="radio" id="customradio2" value="option2">
+                                                <label for="customradio2">&nbsp;&nbsp;Radio 2</label>
                                             </span>
                                         </div>
                                     </div>
@@ -259,7 +259,7 @@
                                                 <button type="submit" class="btn btn-primary">Submit button</button>
                                                 <button type="reset" class="btn btn-danger">Reset button</button>
                                             </div>
-                                        </div> 
+                                        </div>
                                     </div>
                                 </form>
                             </div>
@@ -299,9 +299,9 @@
                                             <option value="4">Option 4</option>
                                             <option value="5">Option 5</option>
                                         </select>
-                                        <span class="checkbox custom-checkbox">  
-                                            <input type="checkbox" id="successcheckbox1" value="option1">  
-                                            <label for="successcheckbox1">&nbsp;&nbsp;Checkbox</label>   
+                                        <span class="checkbox custom-checkbox">
+                                            <input type="checkbox" id="successcheckbox1" value="option1">
+                                            <label for="successcheckbox1">&nbsp;&nbsp;Checkbox</label>
                                         </span>
                                         <div class="help-block mt10">Help text that breaks onto a new line and may extend beyond one line.</div>
                                     </div>
@@ -321,9 +321,9 @@
                                             <option value="4">Option 4</option>
                                             <option value="5">Option 5</option>
                                         </select>
-                                        <span class="radio custom-radio">  
-                                            <input type="radio" id="warningradio1" value="option1">  
-                                            <label for="warningradio1">&nbsp;&nbsp;Radio Button</label>   
+                                        <span class="radio custom-radio">
+                                            <input type="radio" id="warningradio1" value="option1">
+                                            <label for="warningradio1">&nbsp;&nbsp;Radio Button</label>
                                         </span>
                                         <div class="help-block mt10">Help text that breaks onto a new line and may extend beyond one line.</div>
                                     </div>
@@ -343,9 +343,9 @@
                                             <option value="4">Option 4</option>
                                             <option value="5">Option 5</option>
                                         </select>
-                                        <span class="checkbox custom-checkbox">  
-                                            <input type="checkbox" id="errorcheckbox1" value="option1">  
-                                            <label for="errorcheckbox1">&nbsp;&nbsp;Checkbox</label>   
+                                        <span class="checkbox custom-checkbox">
+                                            <input type="checkbox" id="errorcheckbox1" value="option1">
+                                            <label for="errorcheckbox1">&nbsp;&nbsp;Checkbox</label>
                                         </span>
                                         <div class="help-block mt10">Help text that breaks onto a new line and may extend beyond one line.</div>
                                     </div>

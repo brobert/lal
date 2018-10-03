@@ -3,8 +3,8 @@
     <!-- START Head -->
     <head>
         <!-- START META SECTION -->
-		@include('partials.head_meta')
-		<!--/ END META SECTION -->
+        @include('partials.head_meta')
+        <!--/ END META SECTION -->
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
@@ -30,11 +30,11 @@
     <!-- START Body -->
     <body>
         <!-- START Template Header -->
-		@include('partials.template_header')
-		<!--/ END Template Header -->
+        @include('partials.template_header')
+        <!--/ END Template Header -->
 
         @include('partials.left_aside')
-        
+
         @include('partials.right_aside')
 
         <!-- START Template Main -->
@@ -66,7 +66,7 @@
                         <form class="panel panel-default" action="">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Default Layout</h3>
-                            </div>               
+                            </div>
                             <div class="panel-body">
                                 <div class="form-group">
                                     <div class="row">
@@ -143,9 +143,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <div class="checkbox custom-checkbox">  
-                                        <input type="checkbox" name="gift" id="giftcheckbox" value="1">  
-                                        <label for="giftcheckbox">&nbsp;&nbsp;Send as a gift</label>   
+                                    <div class="checkbox custom-checkbox">
+                                        <input type="checkbox" name="gift" id="giftcheckbox" value="1">
+                                        <label for="giftcheckbox">&nbsp;&nbsp;Send as a gift</label>
                                     </div>
                                 </div>
                             </div>
@@ -162,7 +162,7 @@
                         <form class="form-horizontal panel panel-default" action="">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Horizontal Layout</h3>
-                            </div>               
+                            </div>
                             <div class="panel-body">
                                 <div class="form-group">
                                     <label class="control-label col-sm-4">Which one?</label>
@@ -228,9 +228,9 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-8 col-sm-offset-4">
-                                        <div class="checkbox custom-checkbox">  
-                                            <input type="checkbox" name="gift" id="giftcheckbox" value="1">  
-                                            <label for="giftcheckbox">&nbsp;&nbsp;Send as a gift</label>   
+                                        <div class="checkbox custom-checkbox">
+                                            <input type="checkbox" name="gift" id="giftcheckbox" value="1">
+                                            <label for="giftcheckbox">&nbsp;&nbsp;Send as a gift</label>
                                         </div>
                                     </div>
                                 </div>
@@ -252,7 +252,7 @@
                         <form class="form-horizontal form-bordered panel panel-default" action="">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Horizontal Layout - bordered</h3>
-                            </div>               
+                            </div>
                             <div class="panel-body">
                                 <div class="form-group">
                                     <label class="control-label col-sm-4">Which one?</label>
@@ -318,9 +318,9 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-8 col-sm-offset-4">
-                                        <div class="checkbox custom-checkbox">  
-                                            <input type="checkbox" name="gift" id="giftcheckbox" value="1">  
-                                            <label for="giftcheckbox">&nbsp;&nbsp;Send as a gift</label>   
+                                        <div class="checkbox custom-checkbox">
+                                            <input type="checkbox" name="gift" id="giftcheckbox" value="1">
+                                            <label for="giftcheckbox">&nbsp;&nbsp;Send as a gift</label>
                                         </div>
                                     </div>
                                 </div>
@@ -338,7 +338,7 @@
                         <form class="form-horizontal form-striped panel panel-default" action="">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Horizontal Layout - striped</h3>
-                            </div>               
+                            </div>
                             <div class="panel-body">
                                 <div class="form-group">
                                     <label class="control-label col-sm-4">Which one?</label>
@@ -404,9 +404,9 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-8 col-sm-offset-4">
-                                        <div class="checkbox custom-checkbox">  
-                                            <input type="checkbox" name="gift" id="giftcheckbox" value="1">  
-                                            <label for="giftcheckbox">&nbsp;&nbsp;Send as a gift</label>   
+                                        <div class="checkbox custom-checkbox">
+                                            <input type="checkbox" name="gift" id="giftcheckbox" value="1">
+                                            <label for="giftcheckbox">&nbsp;&nbsp;Send as a gift</label>
                                         </div>
                                     </div>
                                 </div>

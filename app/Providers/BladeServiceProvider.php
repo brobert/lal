@@ -15,8 +15,8 @@ class BladeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-    	$this->registerHello();
-    	$this->registerFormatNumber();
+        $this->registerHello();
+        $this->registerFormatNumber();
     }
 
     /**
@@ -28,21 +28,21 @@ class BladeServiceProvider extends ServiceProvider
     {
         //
     }
-    
-    protected function registerHello() 
+
+    protected function registerHello()
     {
-    	Blade::directive('hello', function ($expression)
-    	{
-    		return "<?php echo 'Hello ' . {$expression}; ?>";
-    	});
+        Blade::directive('hello', function ($expression)
+        {
+            return "<?php echo 'Hello ' . {$expression}; ?>";
+        });
     }
-    
+
     protected function registerFormatNumber()
     {
-	   	Blade::directive('fnum', function($expression)
-    	{
-    		return "<?php echo number_format($expression, '.', ' '); ?>";
-    	}
-    	);
+           Blade::directive('fnum', function($expression)
+        {
+            return "<?php echo number_format($expression, '.', ' '); ?>";
+        }
+        );
     }
 }

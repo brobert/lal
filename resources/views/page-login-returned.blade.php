@@ -3,8 +3,8 @@
     <!-- START Head -->
     <head>
         <!-- START META SECTION -->
-		@include('partials.head_meta')
-		<!--/ END META SECTION -->
+        @include('partials.head_meta')
+        <!--/ END META SECTION -->
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
@@ -77,9 +77,9 @@
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-xs-6">
-                                            <div class="checkbox custom-checkbox">  
-                                                <input type="checkbox" name="remember" id="remember" value="1">   
-                                                <label for="remember">&nbsp;&nbsp;Remember me</label>   
+                                            <div class="checkbox custom-checkbox">
+                                                <input type="checkbox" name="remember" id="remember" value="1">
+                                                <label for="remember">&nbsp;&nbsp;Remember me</label>
                                             </div>
                                         </div>
                                         <div class="col-xs-6 text-right">

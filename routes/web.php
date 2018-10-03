@@ -1,4 +1,3 @@
-
 <?php
 
 /*
@@ -87,6 +86,27 @@ Route::group([
         Route::get('messagerich', 'PageController@messagerich')->name('page.message.rich');
         Route::get('timelinev2', 'PageController@timelinev2')->name('page.timeline.v2');
     });
+
+    Route::group([
+        'prefix' => 'hurra'
+    ], function () {
+        Route::get('/', 'HurraController@index')->name('hurra.index');
+        Route::get('calendar', 'PageController@calendar')->name('page.calendar');
+        Route::get('emailinbox', 'PageController@emailinbox')->name('page.email.inbox');
+        Route::get('emailview', 'PageController@emailview')->name('page.email.view');
+        Route::get('error404', 'PageController@error404')->name('page.error.404');
+        Route::get('error403', 'PageController@error403')->name('page.error.403');
+        Route::get('error500', 'PageController@error500')->name('page.error.500');
+        Route::get('faq', 'PageController@faq')->name('page.faq');
+        Route::get('invoice', 'PageController@invoice')->name('page.invoice');
+        Route::get('loginreturned', 'PageController@loginreturned')->name('page.login.returned');
+        Route::get('mediaalbum', 'PageController@mediaalbum')->name('page.media.album');
+        Route::get('mediagallery', 'PageController@mediagallery')->name('page.media.gallery');
+        Route::get('messagebubble', 'PageController@messagebubble')->name('page.message.bubble');
+        Route::get('messagerich', 'PageController@messagerich')->name('page.message.rich');
+        Route::get('timelinev2', 'PageController@timelinev2')->name('page.timeline.v2');
+    });
+
     Route::get('flot', 'ChartController@flot')->name('chart.flot');
     Route::post('flot/data/{type}', 'ChartController@flotData')->name('flot.data');
     Route::get('vector', 'MapsController@vector')->name('maps.vector');
@@ -95,7 +115,7 @@ Route::group([
 
 Auth::routes();
 
-Route::resource('page-profile', 'Auth\ProfileController');
+Route::resource('profile', 'Auth\ProfileController');
 
 Route::get('/register', function () {
     return view('register');

@@ -3,8 +3,8 @@
     <!-- START Head -->
     <head>
         <!-- START META SECTION -->
-		@include('partials.head_meta')
-		<!--/ END META SECTION -->
+        @include('partials.head_meta')
+        <!--/ END META SECTION -->
 
         <!-- START STYLESHEETS -->
         <!-- Plugins stylesheet : optional -->
@@ -30,11 +30,11 @@
     <!-- START Body -->
     <body>
         <!-- START Template Header -->
-		@include('partials.template_header')
-		<!--/ END Template Header -->
+        @include('partials.template_header')
+        <!--/ END Template Header -->
 
         @include('partials.left_aside')
-        
+
         @include('partials.right_aside')
 
         <!-- START Template Main -->
@@ -303,7 +303,7 @@
                                 <!--/ panel toolbar -->
                             </div>
                             <!--/ panel heading/header -->
-                            
+
                             <!-- panel body with collapse capable -->
                             <div class="panel-collapse pull in">
                                 <div class="panel-body">
@@ -403,7 +403,7 @@
                             </div>
                             <!--/ panel heading/header -->
                             <!-- panel body -->
-                            <div class="panel-body">     
+                            <div class="panel-body">
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                                 cillum dolore eu fugiat nulla pariatur.
                             </div>
@@ -645,7 +645,7 @@
                                 <!--/ panel toolbar -->
                             </div>
                             <!--/ panel heading/header -->
-                            
+
                             <!-- panel body with collapse capable -->
                             <div class="panel-collapse pull out">
                                 <div class="panel-body">
@@ -680,7 +680,7 @@
                                 <!--/ panel toolbar -->
                             </div>
                             <!--/ panel heading/header -->
-                            
+
                             <!-- panel body with collapse capable -->
                             <div class="panel-collapse pull out">
                                 <div class="panel-body">
@@ -715,7 +715,7 @@
                                 <!--/ panel toolbar -->
                             </div>
                             <!--/ panel heading/header -->
-                            
+
                             <!-- panel body with collapse capable -->
                             <div class="panel-collapse pull out">
                                 <div class="panel-body">
@@ -730,7 +730,7 @@
                         </div>
                         <!--/ END panel -->
                     </div>
-                </div> 
+                </div>
                 <!--/ END row -->
 
                 <!-- START row -->
@@ -754,7 +754,7 @@
                                 <!--/ panel toolbar -->
                             </div>
                             <!--/ panel heading/header -->
-                            
+
                             <!-- panel body with collapse capable -->
                             <div class="panel-collapse pull out">
                                 <div class="panel-body">
@@ -789,7 +789,7 @@
                                 <!--/ panel toolbar -->
                             </div>
                             <!--/ panel heading/header -->
-                            
+
                             <!-- panel body with collapse capable -->
                             <div class="panel-collapse pull out">
                                 <div class="panel-body">
@@ -824,7 +824,7 @@
                                 <!--/ panel toolbar -->
                             </div>
                             <!--/ panel heading/header -->
-                            
+
                             <!-- panel body with collapse capable -->
                             <div class="panel-collapse pull out">
                                 <div class="panel-body">
@@ -839,7 +839,7 @@
                         </div>
                         <!--/ END panel -->
                     </div>
-                </div> 
+                </div>
                 <!--/ END row -->
 
                 <!-- START row -->
@@ -863,7 +863,7 @@
                                 <!--/ panel toolbar -->
                             </div>
                             <!--/ panel heading/header -->
-                            
+
                             <!-- panel body with collapse capable -->
                             <div class="panel-collapse pull out">
                                 <div class="panel-body">
@@ -898,7 +898,7 @@
                                 <!--/ panel toolbar -->
                             </div>
                             <!--/ panel heading/header -->
-                            
+
                             <!-- panel body with collapse capable -->
                             <div class="panel-collapse pull out">
                                 <div class="panel-body">
@@ -913,7 +913,7 @@
                         </div>
                         <!--/ END panel -->
                     </div>
-                </div> 
+                </div>
                 <!--/ END row -->
             </div>
             <!--/ END Template Container -->
