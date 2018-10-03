@@ -58,7 +58,11 @@
                     </div>
                 </div>
                 <!-- Page Header -->
-
+@if($errors)
+   @foreach ($errors->all() as $error)
+      <div>{{ $error }}</div>
+  @endforeach
+@endif
                 <!-- START row -->
                 <div class="row">
                     <!-- Left / Top Side -->

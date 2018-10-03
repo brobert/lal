@@ -174,17 +174,9 @@
                     <!-- START Right Side -->
                     <div class="col-md-3">
                         <div class="panel panel-minimal">
-
                             @include('dashboard.income', ['data' => $income])
                             @include('dashboard.weather')
                             @include('dashboard.traffic')
-
-
-
-
-
-
-
                         </div>
                     </div>
                     <!--/ END Right Side -->

@@ -59,7 +59,7 @@ class ProfileController extends Controller
         Log::debug($validator->fails() ? 'ERROR' : 'OK');
 
         if ($validator->fails()) {
-            return redirect('page-profile.index')->withErrors($validator)
+            return redirect()->route('page-profile.index')->withErrors($validator)
                 ->withInput();
         } else {
             $user = Auth::user();
@@ -122,7 +122,7 @@ class ProfileController extends Controller
     private $validationRules = [
         'profile' => [
             'name' => 'required|string|min:3|max:190',
-            'location' => 'nullable|string|alpha_dash|max:50',
+            'location' => 'nullable|string|alpha|max:50',
             'website' => 'nullable|url|max:100',
             'bio' => 'nullable|string|max:160'
 
