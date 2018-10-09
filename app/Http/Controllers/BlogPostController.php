@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-
 use Carbon\Carbon;
 use App\Models\BlogPost;
+use App\Models\BlogTag as BlogTag;
 use Illuminate\Http\Request;
+use Log;
 
 
 class BlogPostController extends Controller
@@ -18,9 +19,10 @@ class BlogPostController extends Controller
      */
     public function index(Request $request, $viewType)
     {
+
         $viewName = "blog.blog-$viewType";
         $this->setView($viewName);
-        $this->setData('posts', BlogPost::with('author')->get());
+        $this->setData('posts', $this->getBlogPosts($request));
         return $this->respond(200);
     }
 
@@ -31,6 +33,7 @@ class BlogPostController extends Controller
      */
     public function create()
     {
+
         //
     }
 
@@ -42,6 +45,7 @@ class BlogPostController extends Controller
      */
     public function store(Request $request)
     {
+
         //
     }
 
@@ -51,9 +55,23 @@ class BlogPostController extends Controller
      * @param \App\BlogPost $blogPost
      * @return \Illuminate\Http\Response
      */
-    public function show(BlogPost $blogPost)
+    public function show(Request $request, BlogPost $blogPost, $postid)
     {
+
+        // dd([
+        // $postid,
+        // $request,
+        // $blogPost::with([
+        // 'author'
+        // ])->find($postid)->toArray()
+        // ]);
         $this->setView('blog.blog-single');
+        $this->setData('post', $blogPost::with([
+            'author',
+            'category',
+            'tags'
+        ])->find($postid));
+        // dd($this->data);
         return $this->respond(200);
     }
 
@@ -65,6 +83,7 @@ class BlogPostController extends Controller
      */
     public function edit(BlogPost $blogPost)
     {
+
         //
     }
 
@@ -77,6 +96,7 @@ class BlogPostController extends Controller
      */
     public function update(Request $request, BlogPost $blogPost)
     {
+
         //
     }
 
@@ -88,6 +108,32 @@ class BlogPostController extends Controller
      */
     public function destroy(BlogPost $blogPost)
     {
+
         //
+    }
+
+    private function getBlogPosts(Request $request, $withDeleted = false)
+    {
+
+        $query = BlogPost::with([
+            'author',
+            'category',
+            'tags'
+        ]);
+
+        if ($request->category)
+        {
+            $query->where('category_id', $request->category);
+        }
+
+        if ($request->tag)
+        {
+            $query->whereHas('tags', function ($query) use ($request)
+            {
+                $query->where('blog_tags.id', $request->tag);
+            });
+        }
+
+        return $query->get();
     }
 }

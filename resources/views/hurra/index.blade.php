@@ -11,7 +11,7 @@
         <div class="page-header-section">
             <!-- Toolbar -->
             <div class="toolbar">
-                <a href="page-invoice-printable.html" target="_new" class="btn btn-primary"><i class="ico-print3"></i> Print</a>
+                <a href="{{route('page.invoice.printable')}}" target="_new" class="btn btn-primary"><i class="ico-print3"></i> Print</a>
                 &nbsp;<span class="text-muted semibold">or</span>&nbsp;
                 <div class="btn-group">
                     <button type="button" class="btn btn-default"><i class="ico-screwdriver2"></i></button>

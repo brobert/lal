@@ -19,5 +19,6 @@ class DatabaseSeeder extends Seeder {
         $this->call(CountrySeeder::class);
         $this->call(GeoIpCountrySeeder::class);
         $this->call(UserSeeder::class);
+        $this->call(BlogPostSeeder::class);
     }
 }

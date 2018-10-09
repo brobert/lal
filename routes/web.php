@@ -79,6 +79,9 @@ Route::group([
         Route::get('error500', 'PageController@error500')->name('page.error.500');
         Route::get('faq', 'PageController@faq')->name('page.faq');
         Route::get('invoice', 'PageController@invoice')->name('page.invoice');
+        Route::get('invoice/printable', function () {
+            return view('page-invoice-printable');
+        })->name('page.invoice.printable');
         Route::get('loginreturned', 'PageController@loginreturned')->name('page.login.returned');
         Route::get('mediaalbum', 'PageController@mediaalbum')->name('page.media.album');
         Route::get('mediagallery', 'PageController@mediagallery')->name('page.media.gallery');

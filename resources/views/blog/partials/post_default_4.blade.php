@@ -1,12 +1,6 @@
 <div class="row">
     <div class="col-xs-12">
         <article class="panel overflow-hidden">
-            <!-- Iframe container -->
-            <header class="iframe-container">
-                <iframe src="//player.vimeo.com/video/7449107" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
-            </header>
-            <!--/ Iframe container -->
-
             <!-- Content -->
             <section class="panel-body">
                 <div class="row">
@@ -22,7 +16,10 @@
 
                         <!-- text -->
                         <div class="text-default">
-                            {{$post->content}}
+                            <blockquote>
+                                {{$post->content}}
+                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
                         </div>
                         <!--/ text -->
 

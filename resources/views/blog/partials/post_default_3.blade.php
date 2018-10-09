@@ -1,13 +1,11 @@
 <div class="row">
     <div class="col-xs-12">
         <article class="panel overflow-hidden">
-            <!-- Owl Carousel -->
-            <header id="carousel1" class="owl-carousel">
-                <div class="image"><img src="/image/background/blog/blog5.jpg"></div>
-                <div class="image"><img src="/image/background/blog/blog3.jpg"></div>
-                <div class="image"><img src="/image/background/blog/blog4.jpg"></div>
+            <!-- Iframe container -->
+            <header class="iframe-container">
+                <iframe src="//player.vimeo.com/video/7449107" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
             </header>
-            <!--/ Owl Carousel -->
+            <!--/ Iframe container -->
 
             <!-- Content -->
             <section class="panel-body">

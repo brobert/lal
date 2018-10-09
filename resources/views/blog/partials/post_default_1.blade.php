@@ -1,6 +1,26 @@
 <div class="row">
     <div class="col-xs-12">
         <article class="panel overflow-hidden">
+            <!-- Thumbnail -->
+            <header class="thumbnail">
+                <!-- media -->
+                <div class="media">
+                    <!-- indicator -->
+                    <div class="indicator"><span class="spinner"></span></div>
+                    <!--/ indicator -->
+                    <!-- toolbar overlay -->
+                    <div class="overlay">
+                        <div class="toolbar">
+                            <a href="javascript:void(0);" class="btn btn-default"><i class="ico-link4"></i></a>
+                        </div>
+                    </div>
+                    <!--/ toolbar overlay -->
+                    <img data-toggle="unveil" src="/image/background/placeholder.jpg" data-src="/image/background/blog/blog1.jpg" alt="Photo Leo" width="100%">
+                </div>
+                <!--/ media -->
+            </header>
+            <!--/ Thumbnail -->
+
             <!-- Content -->
             <section class="panel-body">
                 <div class="row">

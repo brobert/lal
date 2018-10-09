@@ -1,0 +1,24 @@
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 post">
+    <article class="panel overflow-hidden">
+        <!-- Content -->
+        <section class="panel-body">
+            <!-- heading -->
+            <h4 class="thin mt0 ellipsis"><a href="javascript:void(0);" class="text-default">{{$post->title}}</a></h4>
+            <!--/ heading -->
+
+            <!-- text -->
+            <div class="text-default">
+                <blockquote>
+                    <p>{{str_limit($post->content, 400)}}</p>
+                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+            </div>
+            <!--/ text -->
+
+            <!-- Meta & button -->
+                @include('blog.partials.post_grid_footer')
+            <!-- Meta & button -->
+        </section>
+        <!--/ Content -->
+    </article>
+</div>

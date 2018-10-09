@@ -16,10 +16,7 @@
 
                         <!-- text -->
                         <div class="text-default">
-                            <blockquote>
-                                {{$post->content}}
-                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                            </blockquote>
+                            {{$post->content}}
                         </div>
                         <!--/ text -->
 

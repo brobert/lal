@@ -4,7 +4,7 @@
         <p class="meta nm">
             <a href="javascript:void(0);">1 comment</a><!-- comments -->
             <span class="text-muted mr5 ml5">&#8226;</span>
-            <span class="text-muted">In </span><a href="javascript:void(0);">Web design</a><!-- category -->
+            <span class="text-muted">In </span><a href="javascript:void(0);">{{$post->category->name}}</a><!-- category -->
             <span class="text-muted mr5 ml5">&#8226;</span>
             <span class="text-muted">By </span><a href="javascript:void(0);">{{$post->author->name}}</a><!-- author -->
         </p>
